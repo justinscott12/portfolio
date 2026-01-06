@@ -31,6 +31,7 @@ export const projects: Project[] = [
     description: 'Built static Next.js web application that visualizes wealth inequality and economic trends in America through interactive data visualizations. Features 10+ interactive charts using Recharts, SEO optimization, and responsive design. All processing happens client-side for privacy.',
     techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Recharts'],
     link: 'https://yourebeingrobbed.com',
+    githubLink: 'https://github.com/justinscott12/youre-being-robbed',
     featured: true,
   },
 ];

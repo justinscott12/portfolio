@@ -71,14 +71,24 @@ export default function ContactPage() {
                 <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
                   GitHub
                 </h3>
-                <a
-                  href="https://github.com/justinscott12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
-                >
-                  github.com/justinscott12
-                </a>
+                <div className="space-y-2">
+                  <a
+                    href="https://github.com/justinscott12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 block"
+                  >
+                    github.com/justinscott12
+                  </a>
+                  <a
+                    href="https://github.com/justinscott12/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 block text-sm"
+                  >
+                    Portfolio Source Code
+                  </a>
+                </div>
               </div>
             </div>
           </div>

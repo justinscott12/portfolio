@@ -71,7 +71,17 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
                 >
-                  GitHub
+                  GitHub Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/justinscott12/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                >
+                  Portfolio Source
                 </a>
               </li>
             </ul>
