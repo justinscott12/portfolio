@@ -4,10 +4,10 @@ import { getAllSkills } from '@/lib/skills';
 
 export const metadata: Metadata = {
   title: 'Skills',
-  description: 'Technical skills and technologies including AI-augmented development tools (Cursor, GitHub Copilot), AI/ML technologies (RAG Systems, LangGraph, LangChain), Angular, React, Java, Spring Boot, TypeScript, Node.js, PostgreSQL, MongoDB, Docker, AWS, Terraform, and more.',
+  description: 'Technical skills: full-stack (Angular, React, Java, Spring Boot, TypeScript, Node.js), data (PostgreSQL, MongoDB), DevOps (Docker, AWS, Terraform), and AI-assisted development.',
   openGraph: {
     title: 'Skills | Justin Scott',
-    description: 'Technical skills and technologies I work with.',
+    description: 'Technical skills and technologies.',
     type: 'website',
   },
 };
@@ -23,7 +23,7 @@ export default function SkillsPage() {
             Skills & Technologies
           </h1>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            Technologies and tools I use to build software solutions, including AI-augmented development tools and AI/ML technologies
+            Technologies and tools used in production systems and product development
           </p>
         </div>
 

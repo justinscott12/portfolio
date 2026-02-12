@@ -4,13 +4,15 @@ import ProjectCard from '@/components/ProjectCard';
 import PrototypeCard from '@/components/PrototypeCard';
 import { getFeaturedProjects } from '@/lib/projects';
 import { getFeaturedPrototypes } from '@/lib/prototypes';
+import { getAllEducation } from '@/lib/education';
+import EducationCard from '@/components/EducationCard';
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions. 4.5 years of experience building enterprise applications and microservices.',
+  description: 'Full-stack software engineer with 4.5+ years of experience. Designs and ships production systems and own products; strong in architecture, full-stack development, and disciplined AI-assisted engineering.',
   openGraph: {
     title: 'Justin Scott | Full-Stack Software Engineer',
-    description: 'Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions.',
+    description: 'Full-stack software engineer. Architecture, production systems, and end-to-end product development with rigorous engineering practices.',
     type: 'website',
   },
 };
@@ -18,12 +20,13 @@ export const metadata: Metadata = {
 export default function Home() {
   const featuredProjects = getFeaturedProjects();
   const featuredPrototypes = getFeaturedPrototypes();
+  const education = getAllEducation();
 
   return (
     <>
       <Hero
         headline="Justin Scott"
-        subheadline="Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions. 4.5 years of experience designing, architecting, and engineering innovative solutions from scratch. Expertise in developing high-performance APIs and building scalable full-stack applications."
+        subheadline="Full-stack software engineer with 4.5+ years of experience designing, architecting, and shipping production systems. I specialize in building my own products and solutions—from requirements through deployment—with emphasis on clean architecture, maintainability, and rigorous engineering. Proficient in AI-assisted development as part of a disciplined workflow."
         primaryCTA={{
           text: 'View Projects',
           href: '/projects',
@@ -35,47 +38,66 @@ export default function Home() {
       />
 
       {/* About Section */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               About Me
             </h2>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600 dark:text-gray-300">
               <p>
-                I'm a Full-Stack Software Engineer with 4.5 years of experience building enterprise applications
-                and microservices for national security clients. My expertise lies in designing, architecting, and engineering
-                innovative solutions from scratch. I excel at building scalable full-stack applications and developing high-performance APIs.
+                I work full time in federal-sector software development while <strong className="text-gray-900 dark:text-white">specializing in the end-to-end design and engineering of my own products and solutions</strong>. I own the full lifecycle: requirements, architecture, implementation, and deployment. I apply <strong className="text-gray-900 dark:text-white">AI-assisted development</strong> (e.g., Cursor, LLM tooling) where it improves throughput, while maintaining code quality, testability, and architectural clarity—not as a substitute for engineering judgment.
               </p>
               <p>
-                I specialize in AI-augmented development, leveraging modern tools like Cursor and AI assistants to
-                accelerate development while maintaining code quality. This allows me to focus on architecture, problem-solving,
-                and delivering innovative solutions. I've built production RAG systems, LangGraph agents, and AI-powered
-                applications that solve real-world problems.
+                I regularly solve complex issues using AI, prompt engineering, and context management—and have completed tasks that typically take 3–4 hours in about 15 minutes when the problem and tooling align. I have shipped production RAG pipelines, LangGraph-based agents, and full-stack applications across multiple domains. My workflow centers on clear specs, iterative delivery, and ownership of the resulting code. Measured outcomes in prior roles include a 40% reduction in technical debt, 70% faster CI/CD cycles, and infrastructure-as-code that cut environment setup time in half.
               </p>
               <p>
-                While I've worked on legacy system modernization projects, my passion lies in architecting new solutions from the ground up.
-                I have a proven track record of reducing technical debt by 40%, optimizing CI/CD pipelines for 70%
-                faster deployments, and implementing infrastructure-as-code solutions that reduce environment setup
-                time by 50%. Currently working at Idemia-NSS, I focus on building robust, maintainable software using modern
-                technologies like Angular, Spring Boot, PostgreSQL, and React. I'm passionate about writing clean code,
-                designing elegant architectures, and delivering solutions that make a real impact.
+                I work with Python, FastAPI, Java, Spring Boot, REST APIs, Next.js, PostgreSQL for transactional databases, and Pinecone for vector stores. I prioritize clean code, explicit architecture, production-ready delivery, and modern technology and design practices—whether for internal tools, side products, or client systems.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Education Section */}
+      {education.length > 0 && (
+        <section className="py-20 bg-slate-50 dark:bg-gray-800/50 border-t border-slate-200 dark:border-gray-800">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                Education
+              </h2>
+              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                Academic background
+              </p>
+            </div>
+            <div className="max-w-2xl mx-auto">
+              {education.map((edu) => (
+                <EducationCard key={edu.id} education={edu} />
+              ))}
+            </div>
+            <div className="mt-10 text-center">
+              <a
+                href="/education"
+                className="text-base font-semibold text-gray-900 dark:text-white hover:text-slate-600 dark:hover:text-gray-300 transition-colors"
+              >
+                View full education <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Featured Projects */}
       {featuredProjects.length > 0 && (
-        <section className="py-16 bg-gray-50 dark:bg-gray-800">
+        <section className="py-20 bg-slate-50 dark:bg-gray-800/50 border-t border-slate-200 dark:border-gray-800">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 Featured Projects
               </h2>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                A selection of projects I've built and deployed
+                Production and side projects I have designed, built, and deployed
               </p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -86,7 +108,7 @@ export default function Home() {
             <div className="mt-12 text-center">
               <a
                 href="/projects"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-slate-900 dark:bg-white dark:text-gray-900 hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors"
               >
                 View All Projects
                 <span className="ml-2">→</span>
@@ -98,14 +120,14 @@ export default function Home() {
 
       {/* Featured Prototypes */}
       {featuredPrototypes.length > 0 && (
-        <section className="py-16 bg-white dark:bg-gray-900">
+        <section className="py-20 bg-white dark:bg-gray-900 border-t border-slate-200 dark:border-gray-800">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 Featured Prototypes
               </h2>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                Experimental projects exploring AI, RAG systems, security tools, and innovative solutions
+                Side projects and experiments in AI, RAG, security tooling, and systems design
               </p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +138,7 @@ export default function Home() {
             <div className="mt-12 text-center">
               <a
                 href="/projects"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition-colors"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-slate-900 dark:bg-white dark:text-gray-900 hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors"
               >
                 View All Projects & Prototypes
                 <span className="ml-2">→</span>
@@ -127,20 +149,20 @@ export default function Home() {
       )}
 
       {/* Resume Download Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-20 bg-slate-50 dark:bg-gray-800/50 border-t border-slate-200 dark:border-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Download Resume
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              View or download my resume in PDF format
+              Resume available for download in PDF format
             </p>
             <div className="mt-8">
               <a
                 href="/Justin-Scott-Resume.pdf"
                 download
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-slate-900 dark:bg-white dark:text-gray-900 hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors"
               >
                 Download Resume (PDF)
                 <svg

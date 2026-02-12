@@ -10,6 +10,7 @@ export default function Header() {
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
     { href: '/experience', label: 'Experience' },
+    { href: '/education', label: 'Education' },
     { href: '/skills', label: 'Skills' },
     { href: '/contact', label: 'Contact' },
   ];
@@ -28,7 +29,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                className="text-gray-700 dark:text-gray-300 hover:text-slate-900 dark:hover:text-white transition-colors font-medium"
               >
                 {link.label}
               </Link>
@@ -36,7 +37,7 @@ export default function Header() {
             <a
               href="/Justin-Scott-Resume.pdf"
               download
-              className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors font-medium"
+              className="px-4 py-2 bg-slate-900 dark:bg-white dark:text-gray-900 text-white rounded-md hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors font-medium"
             >
               Resume
             </a>
@@ -45,7 +46,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-slate-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -74,7 +75,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-slate-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
@@ -83,7 +84,7 @@ export default function Header() {
             <a
               href="/Justin-Scott-Resume.pdf"
               download
-              className="block px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-center font-medium"
+              className="block px-3 py-2 bg-slate-900 dark:bg-white dark:text-gray-900 text-white rounded-md hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors text-center font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Resume

@@ -55,6 +55,22 @@ export const prototypes: Prototype[] = [
     techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'Next.js', 'React Native', 'Expo', 'TypeScript', 'Stripe', 'WebSocket', 'JWT'],
     featured: true,
   },
+  {
+    id: 'movefinder',
+    title: 'MoveFinder - Relocation Assistant',
+    description: 'AI-powered relocation assistant. Chat to describe where you want to move (climate, cost, coast, mountains, etc.); the app extracts criteria, ranks US cities from a static dataset, and shows candidates on a map. Pick a city, then describe neighborhood preferences (walkable, safe, family-friendly, transit)—get ranked neighborhoods for that city, displayed on the same map.',
+    techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind', 'OpenAI', 'Mapbox GL JS', 'REST API'],
+    githubLink: 'https://github.com/justinscott12/movefinder',
+    featured: true,
+  },
+  {
+    id: 'personal-finance-dashboard',
+    title: 'Personal Finance Dashboard',
+    description: 'Web dashboard for personal finance scenarios with interactive sliders (salary, rent, expenses). Includes an MCP server for Cursor: ask natural-language questions like savings rate, rent affordability, or scenario comparisons. Tools expose get_financial_snapshot, calculate_scenario, compare_scenarios, and rent_affordability. Finance model matches Desmos-style equations (bi-weekly pay, deductions, take-home, savings %).',
+    techStack: ['Next.js', 'React', 'TypeScript', 'Python', 'MCP', 'Tailwind'],
+    githubLink: 'https://github.com/justinscott12/personal-finance-dashboard',
+    featured: true,
+  },
 ];
 
 export function getAllPrototypes(): Prototype[] {

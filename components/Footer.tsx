@@ -7,6 +7,7 @@ export default function Footer() {
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
     { href: '/experience', label: 'Experience' },
+    { href: '/education', label: 'Education' },
     { href: '/skills', label: 'Skills' },
     { href: '/contact', label: 'Contact' },
   ];
@@ -21,7 +22,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Justin Scott</span>
             </div>
             <p className="text-sm text-gray-400">
-              Full-Stack Software Engineer designing, architecting, and engineering innovative solutions from scratch.
+              Full-stack software engineer. I architect and ship products and production systems with a focus on quality and maintainability.
             </p>
           </div>
 
@@ -33,7 +34,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-blue-400 dark:hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-400 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -49,7 +50,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:jscottwv@gmail.com"
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm break-all"
+                  className="text-gray-400 hover:text-white transition-colors text-sm break-all"
                 >
                   jscottwv@gmail.com
                 </a>
@@ -59,7 +60,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/justin-scott12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   LinkedIn
                 </a>
@@ -69,7 +70,7 @@ export default function Footer() {
                   href="https://github.com/justinscott12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   GitHub Profile
                 </a>
@@ -79,7 +80,7 @@ export default function Footer() {
                   href="https://github.com/justinscott12/portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Portfolio Source
                 </a>

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     default: "Justin Scott | Full-Stack Software Engineer",
     template: "%s | Justin Scott",
   },
-  description: "Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions. 4.5 years of experience designing, architecting, and engineering innovative solutions from scratch. Expertise in developing high-performance APIs and building scalable full-stack applications.",
-  keywords: ["Justin Scott", "Software Engineer", "Full-Stack Developer", "AI-Augmented Development", "Cursor", "RAG Systems", "LangGraph", "Java", "Spring Boot", "React", "TypeScript", "Portfolio"],
+  description: "Full-stack software engineer with 4.5+ years of experience. Architecture, production systems, and end-to-end product development. Disciplined AI-assisted engineering.",
+  keywords: ["Justin Scott", "Software Engineer", "Full-Stack", "Architecture", "Production Systems", "Product Development", "Java", "Spring Boot", "React", "TypeScript", "RAG", "LangGraph", "Portfolio"],
   authors: [{ name: "Justin Scott" }],
   creator: "Justin Scott",
   openGraph: {
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     url: "https://justinscott.dev",
     siteName: "Justin Scott",
     title: "Justin Scott | Full-Stack Software Engineer",
-    description: "Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions.",
+    description: "Full-stack software engineer. Architecture, production systems, and end-to-end product development with rigorous engineering practices.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Justin Scott | Full-Stack Software Engineer",
-    description: "Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions.",
+    description: "Full-stack software engineer. Architecture, production systems, and end-to-end product development.",
   },
   robots: {
     index: true,
@@ -65,7 +65,7 @@ export default function RootLayout({
                 "@type": "EducationalOrganization",
                 name: "West Virginia University",
               },
-              description: "Full-Stack Software Engineer specializing in AI-augmented development and building AI-powered solutions. 4.5 years of experience building enterprise applications and microservices.",
+              description: "Full-stack software engineer. Architecture, production systems, and end-to-end product development with disciplined engineering practices.",
             }),
           }}
         />

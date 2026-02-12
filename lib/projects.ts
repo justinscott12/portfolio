@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     id: 'devresumes',
     title: 'devresumes.com',
-    description: 'Built full-stack web application enabling users to create professional resumes. Implemented RESTful APIs with Spring Boot, designed PostgreSQL database schema, and developed responsive Next.js frontend. Features AI-powered resume optimization, GitHub integration, Stripe payments, and PDF generation. Containerized application with Docker for deployment.',
+    description: 'AI-powered resume builder with Stripe payments and PDF export for job seekers. Built full-stack SaaS with Spring Boot, PostgreSQL, Next.js; shipped AI optimization, GitHub import, and Docker deployment.',
     techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'Next.js', 'TypeScript', 'Docker', 'OpenAI API', 'Stripe'],
     link: 'https://devresumes.com',
     featured: true,
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     id: 'averylightfx',
     title: 'averylightfx',
-    description: 'Developed production-ready Next.js web application with TypeScript for a Halloween and Christmas light display. Built admin panel with NextAuth authentication, xSchedule API integration for light show control, and dynamic theme switching. Features secure admin controls, public status pages, and donation integration.',
+    description: 'Public light show control panel for seasonal displays. Production Next.js app with NextAuth, xSchedule API, and donation integration; secure admin and live status pages.',
     techStack: ['Next.js', 'TypeScript', 'React', 'NextAuth', 'Tailwind CSS'],
     link: 'https://averylightfx.com',
     featured: true,
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     id: 'youre-being-robbed',
     title: 'youre-being-robbed',
-    description: 'Built static Next.js web application that visualizes wealth inequality and economic trends in America through interactive data visualizations. Features 10+ interactive charts using Recharts, SEO optimization, and responsive design. All processing happens client-side for privacy.',
+    description: 'Data viz site for wealth inequality and economic trends in the US. 10+ interactive Recharts, SEO-focused, client-side only for privacy; Next.js and Tailwind.',
     techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Recharts'],
     link: 'https://yourebeingrobbed.com',
     githubLink: 'https://github.com/justinscott12/youre-being-robbed',

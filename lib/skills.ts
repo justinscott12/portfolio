@@ -10,11 +10,11 @@ export const skills: SkillCategory[] = [
   },
   {
     category: 'Backend',
-    skills: ['Java', 'Spring Boot', 'Node.js', 'Express.js'],
+    skills: ['Python', 'FastAPI', 'Java', 'Spring Boot', 'REST APIs', 'Node.js', 'Express.js'],
   },
   {
     category: 'Databases',
-    skills: ['PostgreSQL', 'MongoDB'],
+    skills: ['PostgreSQL', 'Pinecone', 'MongoDB'],
   },
   {
     category: 'AI & ML',

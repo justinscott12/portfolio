@@ -20,7 +20,7 @@ export const experiences: Experience[] = [
     type: 'Full-Time - Hybrid',
     achievements: [
       'Modernized legacy Java services and implemented modern code standards, reducing technical debt by 40% within three months and improving application stability',
-      'Developed full-stack features for national security clients using Angular, Spring Boot, and PostgreSQL, delivering 5+ production features that improved system reliability and user experience',
+      'Developed full-stack features using Angular, Spring Boot, and PostgreSQL, delivering 5+ production features that improved system reliability and user experience',
       'Architected microservices with Java Spring Boot, optimized PostgreSQL database queries, and built reactive Angular frontends, resulting in 30% improvement in application performance',
       'Collaborated with cross-functional teams using Agile/SAFe methodologies to deliver features on schedule',
     ],
