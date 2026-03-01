@@ -34,6 +34,15 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/justinscott12/youre-being-robbed',
     featured: true,
   },
+  {
+    id: 'us-election-tracker',
+    title: 'US Election Tracker',
+    description: 'Full-stack election dashboard with live results, interactive US map, and secure REST API for real-time updates. Notable primaries, presidential electoral map, and Congress scorecards; authenticated PATCH API and file-backed data.',
+    techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'REST API'],
+    link: 'https://us-election-tracker.com',
+    githubLink: 'https://github.com/justinscott12/us-election-tracker',
+    featured: true,
+  },
 ];
 
 export function getFeaturedProjects(): Project[] {
