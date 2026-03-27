@@ -10,6 +10,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'us-election-tracker',
+    title: 'US Election Tracker',
+    description: 'Full-stack election dashboard with live results, interactive US map, and secure REST API for real-time updates. Notable primaries, presidential electoral map, and Congress scorecards; authenticated PATCH API and file-backed data.',
+    techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'REST API'],
+    link: 'https://us-election-tracker.com',
+    githubLink: 'https://github.com/justinscott12/us-election-tracker',
+    featured: true,
+  },
+  {
     id: 'devresumes',
     title: 'devresumes.com',
     description: 'AI-powered resume builder with Stripe payments and PDF export for job seekers. Built full-stack SaaS with Spring Boot, PostgreSQL, Next.js; shipped AI optimization, GitHub import, and Docker deployment.',
@@ -32,15 +41,6 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Recharts'],
     link: 'https://yourebeingrobbed.com',
     githubLink: 'https://github.com/justinscott12/youre-being-robbed',
-    featured: true,
-  },
-  {
-    id: 'us-election-tracker',
-    title: 'US Election Tracker',
-    description: 'Full-stack election dashboard with live results, interactive US map, and secure REST API for real-time updates. Notable primaries, presidential electoral map, and Congress scorecards; authenticated PATCH API and file-backed data.',
-    techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'REST API'],
-    link: 'https://us-election-tracker.com',
-    githubLink: 'https://github.com/justinscott12/us-election-tracker',
     featured: true,
   },
 ];
