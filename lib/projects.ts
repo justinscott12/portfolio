@@ -8,45 +8,59 @@ export interface Project {
   featured: boolean;
 }
 
+/** Order and copy aligned with resume PDF */
 export const projects: Project[] = [
   {
     id: 'us-election-tracker',
-    title: 'US Election Tracker',
-    description: 'Full-stack election dashboard with live results, interactive US map, and secure REST API for real-time updates. Notable primaries, presidential electoral map, and Congress scorecards; authenticated PATCH API and file-backed data.',
-    techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'REST API'],
-    link: 'https://us-election-tracker.com',
+    title: 'us-election-tracker',
+    description:
+      'Shipped a data-driven election tracking app with a React UI, Node APIs, and Python for data ingestion or analysis pipelines.',
+    techStack: ['React', 'Node.js', 'Python'],
+    link: 'https://us-election-tracker.com/',
     githubLink: 'https://github.com/justinscott12/us-election-tracker',
     featured: true,
   },
   {
     id: 'devresumes',
     title: 'devresumes.com',
-    description: 'AI-powered resume builder with Stripe payments and PDF export for job seekers. Built full-stack SaaS with Spring Boot, PostgreSQL, Next.js; shipped AI optimization, GitHub import, and Docker deployment.',
-    techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'Next.js', 'TypeScript', 'Docker', 'OpenAI API', 'Stripe'],
+    description:
+      'Built a Next.js resume product with guided editing, PDF export, and AI-assisted parsing so users can go from upload or scratch to a polished document.',
+    techStack: ['JavaScript', 'React', 'Next.js'],
     link: 'https://devresumes.com',
+    featured: true,
+  },
+  {
+    id: 'dungeonhelper',
+    title: 'dungeonhelper',
+    description:
+      'Shipped a Destiny 2 companion in Next.js and TypeScript that surfaces dungeon mechanics and loadout guidance in a focused, mobile-friendly UI.',
+    techStack: ['TypeScript', 'React', 'Next.js'],
+    githubLink: 'https://github.com/justinscott12/dungeonhelper',
     featured: true,
   },
   {
     id: 'averylightfx',
     title: 'averylightfx',
-    description: 'Public light show control panel for seasonal displays. Production Next.js app with NextAuth, xSchedule API, and donation integration; secure admin and live status pages.',
-    techStack: ['Next.js', 'TypeScript', 'React', 'NextAuth', 'Tailwind CSS'],
-    link: 'https://averylightfx.com',
+    description:
+      'Built a community holiday light-show presence as a TypeScript full stack on Express and MongoDB, emphasizing visit info, show status, donations, and media so guests can plan a drive-up visit with synced radio audio and on-site details (address + maps).',
+    techStack: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+    link: 'https://averylightfx.com/',
     featured: true,
   },
   {
     id: 'youre-being-robbed',
     title: 'youre-being-robbed',
-    description: 'Data viz site for wealth inequality and economic trends in the US. 10+ interactive Recharts, SEO-focused, client-side only for privacy; Next.js and Tailwind.',
-    techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Recharts'],
-    link: 'https://yourebeingrobbed.com',
+    description:
+      'Built a wealth-inequality awareness experience as a TypeScript full stack on Express and MongoDB, emphasizing structured evidence and exploration of real wages, housing affordability, and wealth concentration—clear narrative and CTAs so visitors can dig into the data.',
+    techStack: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+    link: 'https://yourebeingrobbed.com/',
     githubLink: 'https://github.com/justinscott12/youre-being-robbed',
     featured: true,
   },
 ];
 
 export function getFeaturedProjects(): Project[] {
-  return projects.filter(project => project.featured);
+  return projects.filter((project) => project.featured);
 }
 
 export function getAllProjects(): Project[] {
@@ -54,6 +68,5 @@ export function getAllProjects(): Project[] {
 }
 
 export function getProjectById(id: string): Project | undefined {
-  return projects.find(project => project.id === id);
+  return projects.find((project) => project.id === id);
 }
-

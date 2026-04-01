@@ -3,38 +3,27 @@ export interface SkillCategory {
   skills: string[];
 }
 
+/** Grouped view of skills as listed on resume PDF */
 export const skills: SkillCategory[] = [
   {
-    category: 'Frontend',
-    skills: ['Angular', 'React', 'Next.js'],
-  },
-  {
-    category: 'Backend',
-    skills: ['Python', 'FastAPI', 'Java', 'Spring Boot', 'REST APIs', 'Node.js', 'Express.js'],
-  },
-  {
-    category: 'Databases',
-    skills: ['PostgreSQL', 'Pinecone', 'MongoDB'],
-  },
-  {
-    category: 'AI & ML',
-    skills: ['RAG Systems', 'LangGraph', 'LangChain', 'OpenAI API', 'Anthropic Claude', 'Vector Databases', 'Pinecone'],
-  },
-  {
-    category: 'AI Development Tools',
-    skills: ['Cursor', 'GitHub Copilot', 'AI-Assisted Development'],
-  },
-  {
-    category: 'DevOps',
-    skills: ['Docker', 'AWS', 'Terraform', 'Jenkins', 'GitLab CI'],
-  },
-  {
     category: 'Languages',
-    skills: ['TypeScript', 'JavaScript', 'Java', 'Bash', 'Python'],
+    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL', 'HTML5', 'Bash'],
   },
   {
-    category: 'Tools',
-    skills: ['Git', 'Jest'],
+    category: 'Frameworks & APIs',
+    skills: ['Angular', 'React', 'Next.js', 'Spring Boot', 'Express.js', 'FastAPI', 'REST API', 'Node.js'],
+  },
+  {
+    category: 'Data & Platforms',
+    skills: ['PostgreSQL', 'RDS', 'MongoDB', 'Microservices'],
+  },
+  {
+    category: 'Cloud & DevOps',
+    skills: ['AWS', 'Terraform', 'Docker', 'DevOps', 'GitLab CI', 'Git'],
+  },
+  {
+    category: 'AI & Engineering Workflow',
+    skills: ['RAG', 'Claude Code', 'Cursor IDE', 'Full-stack'],
   },
 ];
 
@@ -43,6 +32,5 @@ export function getAllSkills(): SkillCategory[] {
 }
 
 export function getAllSkillNames(): string[] {
-  return skills.flatMap(category => category.skills);
+  return skills.flatMap((category) => category.skills);
 }
-

@@ -78,7 +78,8 @@ justinscott-portfolio/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ and npm
+- **Node.js 20.9+** (Next.js 16 minimum). Recommended: **Node 22 LTS** — this repo includes a `.nvmrc` for [nvm](https://github.com/nvm-sh/nvm): run `nvm use` in the project root.
+- npm (ships with Node)
 
 ### Development
 

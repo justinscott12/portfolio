@@ -10,14 +10,6 @@ export interface Prototype {
 
 export const prototypes: Prototype[] = [
   {
-    id: 'dungeonhelper',
-    title: 'Day 1 Mechanics Assistant',
-    description: 'AI-powered RAG application for Destiny 2 teams. Built with Next.js, Pinecone vector database, and Anthropic Claude API. Implements semantic search with real-time streaming responses.',
-    techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Pinecone', 'Anthropic Claude', 'OpenAI Embeddings', 'RAG'],
-    githubLink: 'https://github.com/justinscott12/dungeonhelper',
-    featured: true,
-  },
-  {
     id: 'golfcaddie',
     title: 'AI Golf Caddie',
     description: 'Mobile-first Progressive Web App that provides personalized golf strategy recommendations using AI. Generates pre-round hole-by-hole strategies for all 18 holes (teebox, fairway, chip) and adapts them in real-time during play based on photos, distances, weather, and lie conditions. Features LangGraph agent orchestration, vision AI for course photo analysis, handicap-adjusted strategies, and real-time strategy updates.',

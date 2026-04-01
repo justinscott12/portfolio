@@ -15,8 +15,23 @@ export const metadata: Metadata = {
     default: "Justin Scott | Full-Stack Software Engineer",
     template: "%s | Justin Scott",
   },
-  description: "Full-stack software engineer with 4.5+ years of experience. Architecture, production systems, and end-to-end product development. Disciplined AI-assisted engineering.",
-  keywords: ["Justin Scott", "Software Engineer", "Full-Stack", "Architecture", "Production Systems", "Product Development", "Java", "Spring Boot", "React", "TypeScript", "RAG", "LangGraph", "Portfolio"],
+  description:
+    "AI-focused software engineer. LLM-powered product features, full-stack web apps, federal-sector production experience, AWS, Ansible, Angular, Spring Boot, React, TypeScript.",
+  keywords: [
+    "Justin Scott",
+    "Software Engineer",
+    "Full-Stack",
+    "AI",
+    "LLM",
+    "Java",
+    "Spring Boot",
+    "Angular",
+    "React",
+    "TypeScript",
+    "AWS",
+    "Terraform",
+    "Portfolio",
+  ],
   authors: [{ name: "Justin Scott" }],
   creator: "Justin Scott",
   openGraph: {
@@ -25,12 +40,13 @@ export const metadata: Metadata = {
     url: "https://justinscott.dev",
     siteName: "Justin Scott",
     title: "Justin Scott | Full-Stack Software Engineer",
-    description: "Full-stack software engineer. Architecture, production systems, and end-to-end product development with rigorous engineering practices.",
+    description:
+      "AI-focused software engineer. Full-stack delivery, LLM integrations, and production systems with rigorous engineering practices.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Justin Scott | Full-Stack Software Engineer",
-    description: "Full-stack software engineer. Architecture, production systems, and end-to-end product development.",
+    description: "AI-focused software engineer. Full-stack delivery and production systems.",
   },
   robots: {
     index: true,
@@ -65,7 +81,8 @@ export default function RootLayout({
                 "@type": "EducationalOrganization",
                 name: "West Virginia University",
               },
-              description: "Full-stack software engineer. Architecture, production systems, and end-to-end product development with disciplined engineering practices.",
+              description:
+                "AI-focused software engineer. LLM-powered capabilities, full-stack web applications, and disciplined production engineering.",
             }),
           }}
         />

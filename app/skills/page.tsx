@@ -4,7 +4,8 @@ import { getAllSkills } from '@/lib/skills';
 
 export const metadata: Metadata = {
   title: 'Skills',
-  description: 'Technical skills: full-stack (Angular, React, Java, Spring Boot, TypeScript, Node.js), data (PostgreSQL, MongoDB), DevOps (Docker, AWS, Terraform), and AI-assisted development.',
+  description:
+    'Technical skills aligned with resume: Angular, React, Next.js, Java, Spring Boot, TypeScript, Node.js, Express.js, Python, FastAPI, PostgreSQL, AWS, Terraform, Docker, GitLab CI, RAG, Cursor, and more.',
   openGraph: {
     title: 'Skills | Justin Scott',
     description: 'Technical skills and technologies.',

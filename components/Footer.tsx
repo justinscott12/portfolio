@@ -22,7 +22,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Justin Scott</span>
             </div>
             <p className="text-sm text-gray-400">
-              Full-stack software engineer. I architect and ship products and production systems with a focus on quality and maintainability.
+              AI-focused software engineer. Full-stack product delivery, production systems, and disciplined use of modern AI-native tooling.
             </p>
           </div>
 

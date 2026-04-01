@@ -14,7 +14,7 @@ export default function EducationCard({ education: edu }: EducationCardProps) {
             {edu.degree}
           </h3>
           <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">
-            {edu.startDate} – {edu.endDate}
+            {edu.startDate ? `${edu.startDate} – ${edu.endDate}` : edu.endDate}
           </span>
         </div>
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-gray-600 dark:text-gray-400">

@@ -13,16 +13,16 @@ export const experiences: Experience[] = [
   {
     id: 'idemia-nss-engineer',
     company: 'Idemia-NSS',
-    role: 'Software Engineer I',
+    role: 'Software Engineer',
     startDate: 'Jun 2024',
     endDate: 'Present',
     location: 'Morgantown, WV',
-    type: 'Full-Time - Hybrid',
+    type: 'Hybrid',
     achievements: [
-      'Modernized legacy Java services and implemented modern code standards, reducing technical debt by 40% within three months and improving application stability',
-      'Developed full-stack features using Angular, Spring Boot, and PostgreSQL, delivering 5+ production features that improved system reliability and user experience',
-      'Architected microservices with Java Spring Boot, optimized PostgreSQL database queries, and built reactive Angular frontends, resulting in 30% improvement in application performance',
-      'Collaborated with cross-functional teams using Agile/SAFe methodologies to deliver features on schedule',
+      'Reduced overall project technical debt by 40% within three months by modernizing legacy Java services and introducing modern code standards, directly improving application stability and system performance',
+      'Delivered 5+ mission-critical full-stack features for national security clients, leveraging Angular, Spring Boot, and PostgreSQL technologies, significantly enhancing system reliability and user experience',
+      'Architected high-performance microservices using Java Spring Boot, optimized PostgreSQL queries, and developed reactive Angular frontends, resulting in a 30% improvement in application performance',
+      'Collaborated with cross-functional Agile/SAFe teams to consistently deliver 5+ features on schedule, ensuring project milestones were met',
     ],
   },
   {
@@ -32,11 +32,11 @@ export const experiences: Experience[] = [
     startDate: 'Mar 2022',
     endDate: 'Apr 2024',
     location: 'Morgantown, WV',
-    type: 'Intern',
+    type: 'Onsite',
     achievements: [
-      'Redesigned Jenkins CI/CD pipeline architecture using modular design, reducing build, test, and deployment times by 70%',
-      'Refactored build infrastructure into reusable components, reducing pipeline configuration files by 90% and simplifying maintenance for new team members',
-      'Upgraded multi-platform mobile applications to latest Android and iOS SDKs, improving app stability and performance',
+      'Revamped Jenkins CI/CD pipeline architecture with a modular design, leading to a 70% reduction in build, test, and deployment times',
+      'Refactored build infrastructure into reusable components, streamlining maintenance processes and easing onboarding for new team members, resulting in 25% improvement',
+      'Enhanced multi-platform mobile applications with the latest Android and iOS SDKs, improving stability and performance by 30%',
     ],
   },
   {
@@ -46,11 +46,11 @@ export const experiences: Experience[] = [
     startDate: 'May 2021',
     endDate: 'Aug 2021',
     location: 'Washington, PA',
-    type: 'Intern',
+    type: 'Hybrid',
     achievements: [
-      'Implemented Terraform Infrastructure-as-Code for AWS cloud resources, reducing new environment setup time by 50% and improving scalability',
+      'Implemented Terraform Infrastructure-as-Code for AWS cloud resources, reducing new environment setup time by 50% and enhancing scalability',
       'Automated continuous delivery with GitLab CI/CD pipelines, enabling rapid deployments across staging and production environments',
-      'Created centralized engineering knowledge base using MkDocs and Markdown, documenting code patterns and streamlining developer onboarding',
+      'Established a centralized engineering knowledge base using MkDocs and Markdown, documenting code patterns to facilitate developer onboarding, resulting in 25% improvement',
     ],
   },
 ];
@@ -60,6 +60,5 @@ export function getAllExperiences(): Experience[] {
 }
 
 export function getExperienceById(id: string): Experience | undefined {
-  return experiences.find(exp => exp.id === id);
+  return experiences.find((exp) => exp.id === id);
 }
-

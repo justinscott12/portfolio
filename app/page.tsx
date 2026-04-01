@@ -9,10 +9,12 @@ import EducationCard from '@/components/EducationCard';
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Full-stack software engineer with 4.5+ years of experience. Designs and ships production systems and own products; strong in architecture, full-stack development, and disciplined AI-assisted engineering.',
+  description:
+    'AI-focused software engineer shipping LLM-powered product capabilities and full-stack web apps. Production experience in federal-sector software, AWS, Ansible, and platform delivery.',
   openGraph: {
     title: 'Justin Scott | Full-Stack Software Engineer',
-    description: 'Full-stack software engineer. Architecture, production systems, and end-to-end product development with rigorous engineering practices.',
+    description:
+      'AI-focused software engineer. Full-stack delivery, production systems, and disciplined engineering with modern AI-native tooling.',
     type: 'website',
   },
 };
@@ -26,7 +28,7 @@ export default function Home() {
     <>
       <Hero
         headline="Justin Scott"
-        subheadline="Full-stack software engineer with 4.5+ years of experience designing, architecting, and shipping production systems. I specialize in building my own products and solutions—from requirements through deployment—with emphasis on clean architecture, maintainability, and rigorous engineering. Proficient in AI-assisted development as part of a disciplined workflow."
+        subheadline="AI-focused software engineer who designs, integrates, and ships LLM-powered product capabilities (APIs, prompts-as-code, evaluation-minded workflows) alongside full-stack web applications. Works in an AI-native development workflow (Cursor and modern LLM tooling) while keeping code review, testing, and architecture non-negotiable—with strong production experience in customer-facing software, AWS and Ansible-based operations, and measurable platform wins."
         primaryCTA={{
           text: 'View Projects',
           href: '/projects',
@@ -46,13 +48,13 @@ export default function Home() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600 dark:text-gray-300">
               <p>
-                I work full time in federal-sector software development while <strong className="text-gray-900 dark:text-white">specializing in the end-to-end design and engineering of my own products and solutions</strong>. I own the full lifecycle: requirements, architecture, implementation, and deployment. I apply <strong className="text-gray-900 dark:text-white">AI-assisted development</strong> (e.g., Cursor, LLM tooling) where it improves throughput, while maintaining code quality, testability, and architectural clarity—not as a substitute for engineering judgment.
+                I work full time as a software engineer at Idemia-NSS while continuing to <strong className="text-gray-900 dark:text-white">design and ship my own products</strong> end to end. My resume summary: AI-focused engineering—integrating LLM-powered capabilities with full-stack web work—using an AI-native workflow (Cursor and modern tooling) to move faster on implementation and refactors without trading off review, tests, or architecture.
               </p>
               <p>
-                I am a Mid-level Full Stack Engineer focused on building in lean, high-trust teams where I can own features end-to-end, from schema design and backend APIs to polished UI delivery. I have designed, implemented, debugged, and delivered production REST APIs from scratch to major production customers. I have rebuilt my workflow around Cursor and agentic AI tools to dramatically increase velocity, while maintaining a strict human-in-the-loop process so every PR stays clean, modular, and production-ready. I have shipped full-stack applications across multiple domains, and this approach has contributed to a 40% reduction in technical debt, 70% faster CI/CD cycles, and infrastructure-as-code improvements that cut environment setup time in half.
+                Production background includes <strong className="text-gray-900 dark:text-white">biometric and customer-facing software</strong>, AWS and Ansible-based operations, and measurable wins such as a ~90% reduction in file usage and scalable, maintainable infrastructure. On the job I deliver with Angular, Spring Boot, PostgreSQL, and Agile/SAFe teams; on side products I lean on TypeScript, React, Next.js, Node, Express, and MongoDB—matching the stack called out on my resume.
               </p>
               <p>
-                I work with Python, FastAPI, Java, Spring Boot, REST APIs, Next.js, PostgreSQL for transactional databases, and Pinecone for vector stores. I prioritize clean code, explicit architecture, production-ready delivery, and modern technology and design practices—whether for internal tools, side products, or client systems.
+                Skills on my resume emphasize the same tools I use daily: Angular, React, Next.js, Java, Spring Boot, TypeScript, Node.js, Express.js, Python, FastAPI, PostgreSQL, AWS, Terraform, Docker, GitLab CI, RAG, and Cursor—plus certifications in SAFe and HashiCorp Terraform.
               </p>
             </div>
           </div>
