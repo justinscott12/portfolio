@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Justin Scott | Full-Stack Software Engineer",
+    default: "Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
     template: "%s | Justin Scott",
   },
   description:
-    "AI-focused software engineer. LLM-powered product features, full-stack web apps, federal-sector production experience, AWS, Ansible, Angular, Spring Boot, React, TypeScript.",
+    "Full-Stack Engineer — LLM Product Features & AI-Assisted Development. Angular, Spring Boot, PostgreSQL, TypeScript, Next.js, OpenAI, RAG, AWS, Terraform.",
   keywords: [
     "Justin Scott",
     "Software Engineer",
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://justinscott.dev",
     siteName: "Justin Scott",
-    title: "Justin Scott | Full-Stack Software Engineer",
+    title: "Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
     description:
-      "AI-focused software engineer. Full-stack delivery, LLM integrations, and production systems with rigorous engineering practices.",
+      "Full-stack engineer shipping production features and LLM-powered products. Angular, Spring Boot, TypeScript, Next.js, RAG.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Justin Scott | Full-Stack Software Engineer",
-    description: "AI-focused software engineer. Full-stack delivery and production systems.",
+    title: "Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
+    description: "Full-stack engineer. LLM product features, Angular, Spring Boot, TypeScript, Next.js.",
   },
   robots: {
     index: true,
@@ -69,11 +69,12 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Justin Scott",
-              jobTitle: "Full-Stack Software Engineer",
+              jobTitle: "Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
               email: "jscottwv@gmail.com",
               telephone: "(304) 282-4087",
               url: "https://justinscott.dev",
               sameAs: [
+                "https://justin-scott.dev",
                 "https://www.linkedin.com/in/justin-scott12",
                 "https://github.com/justinscott12",
               ],
@@ -82,7 +83,7 @@ export default function RootLayout({
                 name: "West Virginia University",
               },
               description:
-                "AI-focused software engineer. LLM-powered capabilities, full-stack web applications, and disciplined production engineering.",
+                "Full-stack engineer shipping production features and LLM-powered product flows. Angular, Spring Boot, PostgreSQL, TypeScript, Next.js, OpenAI, RAG.",
             }),
           }}
         />

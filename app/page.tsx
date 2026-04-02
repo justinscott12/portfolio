@@ -10,11 +10,11 @@ import EducationCard from '@/components/EducationCard';
 export const metadata: Metadata = {
   title: 'Home',
   description:
-    'AI-focused software engineer shipping LLM-powered product capabilities and full-stack web apps. Production experience in federal-sector software, AWS, Ansible, and platform delivery.',
+    'Full-stack engineer — LLM product features and AI-assisted development. Security-sensitive production work with Angular, Spring Boot, PostgreSQL; public LLM-powered products including devresumes.com and RAG apps.',
   openGraph: {
-    title: 'Justin Scott | Full-Stack Software Engineer',
+    title: 'Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development',
     description:
-      'AI-focused software engineer. Full-stack delivery, production systems, and disciplined engineering with modern AI-native tooling.',
+      'Full-stack engineer shipping production features and LLM-powered product flows. Angular, Spring Boot, TypeScript, Next.js, OpenAI, RAG.',
     type: 'website',
   },
 };
@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Hero
         headline="Justin Scott"
-        subheadline="AI-focused software engineer who designs, integrates, and ships LLM-powered product capabilities (APIs, prompts-as-code, evaluation-minded workflows) alongside full-stack web applications. Works in an AI-native development workflow (Cursor and modern LLM tooling) while keeping code review, testing, and architecture non-negotiable—with strong production experience in customer-facing software, AWS and Ansible-based operations, and measurable platform wins."
+        subheadline="Full-Stack Engineer — LLM Product Features & AI-Assisted Development. Full-stack engineer shipping production features for security-sensitive clients: Angular and Spring Boot services, PostgreSQL, and microservices—plus LLM-powered product work on devresumes.com and RAG systems. AI-native development with Cursor and modern tooling; code review, tests, and architecture stay non-negotiable. Strong AWS, Terraform, and CI/CD background."
         primaryCTA={{
           text: 'View Projects',
           href: '/projects',
@@ -48,13 +48,16 @@ export default function Home() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600 dark:text-gray-300">
               <p>
-                I work full time as a software engineer at Idemia-NSS while continuing to <strong className="text-gray-900 dark:text-white">design and ship my own products</strong> end to end. My resume summary: AI-focused engineering—integrating LLM-powered capabilities with full-stack web work—using an AI-native workflow (Cursor and modern tooling) to move faster on implementation and refactors without trading off review, tests, or architecture.
+                I work full time as a software engineer at Idemia-NSS while continuing to{' '}
+                <strong className="text-gray-900 dark:text-white">design and ship my own products</strong> end to end—
+                including devresumes.com (guided editing, PDF export, LLM-assisted parsing) and projects like a RAG-based
+                Destiny 2 assistant (OpenAI embeddings, Pinecone, Claude) and data-heavy public sites.
               </p>
               <p>
-                Production background includes <strong className="text-gray-900 dark:text-white">biometric and customer-facing software</strong>, AWS and Ansible-based operations, and measurable wins such as a ~90% reduction in file usage and scalable, maintainable infrastructure. On the job I deliver with Angular, Spring Boot, PostgreSQL, and Agile/SAFe teams; on side products I lean on TypeScript, React, Next.js, Node, Express, and MongoDB—matching the stack called out on my resume.
+                On the job I deliver with <strong className="text-gray-900 dark:text-white">Angular, Spring Boot, PostgreSQL</strong>, and Agile/SAFe teams for national-security clients. On side products I lean on TypeScript, React, Next.js, Spring Boot, and modern AI APIs—aligned with the stacks on my resume.
               </p>
               <p>
-                Skills on my resume emphasize the same tools I use daily: Angular, React, Next.js, Java, Spring Boot, TypeScript, Node.js, Express.js, Python, FastAPI, PostgreSQL, AWS, Terraform, Docker, GitLab CI, RAG, and Cursor—plus certifications in SAFe and HashiCorp Terraform.
+                Skills on my resume include Angular, AWS, Docker, FastAPI, Git, GitHub Actions, GitLab CI, Java, JavaScript, LLM product integration, Microservices, Next.js, Node.js, PostgreSQL, Python, RAG, React, Spring Boot, Tailwind CSS, TypeScript, and more—plus SAFe and HashiCorp Terraform certifications.
               </p>
             </div>
           </div>

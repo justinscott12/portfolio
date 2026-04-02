@@ -11,30 +11,53 @@ export interface Project {
 /** Order and copy aligned with resume PDF */
 export const projects: Project[] = [
   {
-    id: 'us-election-tracker',
-    title: 'us-election-tracker',
-    description:
-      'Shipped a data-driven election tracking app with a React UI, Node APIs, and Python for data ingestion or analysis pipelines.',
-    techStack: ['React', 'Node.js', 'Python'],
-    link: 'https://us-election-tracker.com/',
-    githubLink: 'https://github.com/justinscott12/us-election-tracker',
-    featured: true,
-  },
-  {
     id: 'devresumes',
     title: 'devresumes.com',
     description:
-      'Built a Next.js resume product with guided editing, PDF export, and AI-assisted parsing so users can go from upload or scratch to a polished document.',
-    techStack: ['JavaScript', 'React', 'Next.js'],
+      'End-to-end resume product: guided editing, PDF export with templates, and LLM-assisted parsing and import from uploads or pasted text into a structured profile. Next.js client with React Hook Form, Zod, Stripe, and Spring Boot backend with JPA, PostgreSQL, Spring Security, GitHub OAuth, JWT, ATS-style scoring, job alignment, and Roast My Resume-style analyzers. Docker Compose-style workflows and GitHub Actions CI/CD.',
+    techStack: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Tailwind CSS',
+      'Spring Boot',
+      'Java',
+      'PostgreSQL',
+      'OpenAI API',
+      'Stripe',
+      'Docker',
+      'Jest',
+      'GitHub Actions',
+    ],
     link: 'https://devresumes.com',
+    featured: true,
+  },
+  {
+    id: 'us-election-tracker',
+    title: 'US Election Tracker',
+    description:
+      'Data-heavy election site: presidential history and results, state hubs, live results, demographics and census-oriented pages, and notable races with structured TypeScript datasets and reusable map and chart UI. Next.js API routes, strong SEO (sitemap, robots, Open Graph, JSON-LD), and Python plus Node scripts to build and validate datasets.',
+    techStack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Netlify Blobs', 'Python', 'Node.js'],
+    link: 'https://us-election-tracker.com',
     featured: true,
   },
   {
     id: 'dungeonhelper',
     title: 'dungeonhelper',
     description:
-      'Shipped a Destiny 2 companion in Next.js and TypeScript that surfaces dungeon mechanics and loadout guidance in a focused, mobile-friendly UI.',
-    techStack: ['TypeScript', 'React', 'Next.js'],
+      'Destiny 2 dungeon mechanics assistant using RAG: OpenAI embeddings, Pinecone retrieval, Claude for streaming answers, and Next.js API routes for chat and semantic search. Zod validation, rate limiting, response caching, and a responsive React UI for contest-style play.',
+    techStack: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Tailwind CSS',
+      'RAG',
+      'OpenAI',
+      'Pinecone',
+      'Claude',
+      'Zod',
+      'Radix UI',
+    ],
     githubLink: 'https://github.com/justinscott12/dungeonhelper',
     featured: true,
   },
@@ -42,8 +65,8 @@ export const projects: Project[] = [
     id: 'averylightfx',
     title: 'averylightfx',
     description:
-      'Built a community holiday light-show presence as a TypeScript full stack on Express and MongoDB, emphasizing visit info, show status, donations, and media so guests can plan a drive-up visit with synced radio audio and on-site details (address + maps).',
-    techStack: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+      'Community holiday light-show site: visit info, donations, media, maps and drive-up context, with seasonal Halloween and Christmas theming. NextAuth and bcrypt-backed credentials where needed; API routes for schedule and theme data. Responsive Tailwind UI.',
+    techStack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'NextAuth.js', 'axios'],
     link: 'https://averylightfx.com/',
     featured: true,
   },
@@ -51,10 +74,9 @@ export const projects: Project[] = [
     id: 'youre-being-robbed',
     title: 'youre-being-robbed',
     description:
-      'Built a wealth-inequality awareness experience as a TypeScript full stack on Express and MongoDB, emphasizing structured evidence and exploration of real wages, housing affordability, and wealth concentration—clear narrative and CTAs so visitors can dig into the data.',
-    techStack: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
+      'Data-forward site on wealth inequality, wages, housing, healthcare costs, and corporate profits vs wages. Tabbed navigation, section-specific titles for SEO, interactive Recharts visualizations, Tailwind and Lucide for readable statistics.',
+    techStack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Recharts', 'Lucide React'],
     link: 'https://yourebeingrobbed.com/',
-    githubLink: 'https://github.com/justinscott12/youre-being-robbed',
     featured: true,
   },
 ];

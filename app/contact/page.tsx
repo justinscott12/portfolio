@@ -55,6 +55,20 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
+                  Website
+                </h3>
+                <a
+                  href="https://justin-scott.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  justin-scott.dev
+                </a>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
                   LinkedIn
                 </h3>
                 <a

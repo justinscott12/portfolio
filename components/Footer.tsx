@@ -22,7 +22,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Justin Scott</span>
             </div>
             <p className="text-sm text-gray-400">
-              AI-focused software engineer. Full-stack product delivery, production systems, and disciplined use of modern AI-native tooling.
+              Full-stack engineer — LLM product features and AI-assisted development. Production delivery with Angular, Spring Boot, and LLM-powered products.
             </p>
           </div>
 
@@ -63,6 +63,16 @@ export default function Footer() {
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://justin-scott.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  justin-scott.dev
                 </a>
               </li>
               <li>

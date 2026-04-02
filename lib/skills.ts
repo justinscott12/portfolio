@@ -7,23 +7,23 @@ export interface SkillCategory {
 export const skills: SkillCategory[] = [
   {
     category: 'Languages',
-    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL', 'HTML5', 'Bash'],
+    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL', 'HTML5', 'SASS', 'Bash'],
   },
   {
     category: 'Frameworks & APIs',
-    skills: ['Angular', 'React', 'Next.js', 'Spring Boot', 'Express.js', 'FastAPI', 'REST API', 'Node.js'],
+    skills: ['Angular', 'React', 'Next.js', 'Spring Boot', 'Node.js', 'REST API', 'Microservices', 'FastAPI', 'Tailwind CSS'],
   },
   {
-    category: 'Data & Platforms',
-    skills: ['PostgreSQL', 'RDS', 'MongoDB', 'Microservices'],
+    category: 'Data',
+    skills: ['PostgreSQL'],
   },
   {
     category: 'Cloud & DevOps',
-    skills: ['AWS', 'Terraform', 'Docker', 'DevOps', 'GitLab CI', 'Git'],
+    skills: ['AWS', 'Terraform', 'Docker', 'DevOps', 'Git', 'GitHub Actions', 'GitLab CI', 'Linux'],
   },
   {
-    category: 'AI & Engineering Workflow',
-    skills: ['RAG', 'Claude Code', 'Cursor IDE', 'Full-stack'],
+    category: 'AI & Product Delivery',
+    skills: ['LLM Product Integration', 'RAG', 'Full-stack Delivery'],
   },
 ];
 

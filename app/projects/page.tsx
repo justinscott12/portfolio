@@ -79,7 +79,7 @@ export default function ProjectsPage() {
                     dungeonhelper
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    Destiny 2 companion—dungeon mechanics and loadout guidance (Next.js, TypeScript)
+                    RAG assistant—OpenAI embeddings, Pinecone, Claude, Next.js API routes (TypeScript)
                   </p>
                 </div>
                 <span className="text-blue-600 dark:text-blue-400">→</span>
@@ -97,7 +97,7 @@ export default function ProjectsPage() {
                     youre-being-robbed
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    Wealth-inequality awareness—evidence and exploration (Express, MongoDB, TypeScript)
+                    Wealth inequality data viz—Next.js, Recharts, Tailwind (TypeScript)
                   </p>
                 </div>
                 <span className="text-blue-600 dark:text-blue-400">→</span>

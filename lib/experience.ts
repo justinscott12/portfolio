@@ -19,10 +19,11 @@ export const experiences: Experience[] = [
     location: 'Morgantown, WV',
     type: 'Hybrid',
     achievements: [
-      'Reduced overall project technical debt by 40% within three months by modernizing legacy Java services and introducing modern code standards, directly improving application stability and system performance',
-      'Delivered 5+ mission-critical full-stack features for national security clients, leveraging Angular, Spring Boot, and PostgreSQL technologies, significantly enhancing system reliability and user experience',
-      'Architected high-performance microservices using Java Spring Boot, optimized PostgreSQL queries, and developed reactive Angular frontends, resulting in a 30% improvement in application performance',
-      'Collaborated with cross-functional Agile/SAFe teams to consistently deliver 5+ features on schedule, ensuring project milestones were met',
+      'Cut project technical debt ~40% in three months by modernizing legacy Java services and tightening code standards, improving stability and performance',
+      'Delivered multiple mission-critical full-stack features for national security clients using Angular, Spring Boot, and PostgreSQL, improving reliability and UX in production',
+      'Improved application performance ~30% via Spring Boot microservice design, PostgreSQL query tuning, and reactive Angular frontend',
+      'Collaborated in Agile/SAFe teams to deliver multiple features per increment on schedule, aligning engineering delivery with program milestones and dependencies',
+      'Uses AI-assisted development tools (e.g. Cursor) for faster spikes and refactors; all production changes follow team review, testing, and release standards',
     ],
   },
   {
@@ -35,8 +36,8 @@ export const experiences: Experience[] = [
     type: 'Onsite',
     achievements: [
       'Revamped Jenkins CI/CD pipeline architecture with a modular design, leading to a 70% reduction in build, test, and deployment times',
-      'Refactored build infrastructure into reusable components, streamlining maintenance processes and easing onboarding for new team members, resulting in 25% improvement',
-      'Enhanced multi-platform mobile applications with the latest Android and iOS SDKs, improving stability and performance by 30%',
+      'Refactored build infrastructure into reusable Jenkins components, reducing maintenance overhead and speeding onboarding for new engineers.',
+      'Updated multi-platform mobile apps to current Android and iOS SDKs, improving stability and performance',
     ],
   },
   {
@@ -50,7 +51,7 @@ export const experiences: Experience[] = [
     achievements: [
       'Implemented Terraform Infrastructure-as-Code for AWS cloud resources, reducing new environment setup time by 50% and enhancing scalability',
       'Automated continuous delivery with GitLab CI/CD pipelines, enabling rapid deployments across staging and production environments',
-      'Established a centralized engineering knowledge base using MkDocs and Markdown, documenting code patterns to facilitate developer onboarding, resulting in 25% improvement',
+      'Built a centralized MkDocs/Markdown engineering knowledge base documenting code patterns and runbooks, shortening onboarding for new contributors.',
     ],
   },
 ];
