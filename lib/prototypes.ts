@@ -10,6 +10,38 @@ export interface Prototype {
 
 export const prototypes: Prototype[] = [
   {
+    id: 'otto',
+    title: 'Otto — Vehicle Maintenance',
+    description:
+      'B2C mobile-first app (Expo) + Fastify API for car maintenance reminders and service history. Decodes VINs via NHTSA vPIC, runs an offline SQLite garage with a calibration wizard, supports due-by-mileage AND due-by-date logic, local notifications, and receipt photos. Optional cloud sync, Stripe Pro tier, and PDF export. Monorepo with shared Zod schemas between mobile and API.',
+    techStack: ['TypeScript', 'Expo', 'React Native', 'Fastify', 'SQLite', 'Zod', 'Stripe', 'AWS S3'],
+    featured: true,
+  },
+  {
+    id: 'beat-sync-clips',
+    title: 'Beat-Sync Clips',
+    description:
+      'Hosted SaaS — "one video from your clips, cut to the beat." Upload a track plus video clips, librosa transient detection drives cut points, FFmpeg renders a single MP4 (9:16 or original aspect) with optional flash/zoom on cuts. Next.js + Tailwind frontend with Clerk auth, FastAPI backend handing off to RQ + Redis workers, Postgres for state, S3-compatible object storage, Stripe Checkout + webhooks, and slowapi rate limits.',
+    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'Python', 'PostgreSQL', 'Redis', 'RQ', 'FFmpeg', 'librosa', 'Stripe', 'Clerk', 'S3'],
+    featured: true,
+  },
+  {
+    id: 'golf-swing-ai',
+    title: 'Golf Swing AI',
+    description:
+      'Personal iOS app (Expo) + local Node server for golf swing analysis. Records 120/240 fps slo-mo on phone, compares side-by-side against baseline swings, and gets Claude-only vision coaching feedback. Server runs FFmpeg locally over LAN; designed to keep video processing on-device and on-network rather than in the cloud.',
+    techStack: ['TypeScript', 'Expo', 'React Native', 'Node.js', 'FFmpeg', 'Claude', 'Vision'],
+    featured: true,
+  },
+  {
+    id: 'monthly-money',
+    title: 'Monthly Money',
+    description:
+      'Local-first CLI + web UI that turns one month of bank statements into a report card. Upload PDF or CSV statements, enter income, get F → S letter grades per spending category and savings rate. Claude (no GPT) parses the statements and categorizes rows; grading itself is deterministic against a YAML benchmarks file so results are reproducible.',
+    techStack: ['Node.js', 'TypeScript', 'Claude', 'PDF Parsing', 'YAML', 'CLI', 'Web UI'],
+    featured: true,
+  },
+  {
     id: 'golfcaddie',
     title: 'AI Golf Caddie',
     description: 'Mobile-first Progressive Web App that provides personalized golf strategy recommendations using AI. Generates pre-round hole-by-hole strategies for all 18 holes (teebox, fairway, chip) and adapts them in real-time during play based on photos, distances, weather, and lie conditions. Features LangGraph agent orchestration, vision AI for course photo analysis, handicap-adjusted strategies, and real-time strategy updates.',

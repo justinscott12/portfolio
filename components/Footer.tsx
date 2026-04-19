@@ -22,7 +22,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Justin Scott</span>
             </div>
             <p className="text-sm text-gray-400">
-              Full-stack engineer — LLM product features and AI-assisted development. Production delivery with Angular, Spring Boot, and LLM-powered products.
+              AI-Native Full-Stack Engineer. Live B2C products, RAG systems, agentic tools, and an MCP server. Tampa, FL.
             </p>
           </div>
 

@@ -10,11 +10,11 @@ import EducationCard from '@/components/EducationCard';
 export const metadata: Metadata = {
   title: 'Home',
   description:
-    'Full-stack engineer — LLM product features and AI-assisted development. Security-sensitive production work with Angular, Spring Boot, PostgreSQL; public LLM-powered products including devresumes.com and RAG apps.',
+    'AI-Native Full-Stack Engineer. 15+ end-to-end projects across web, mobile, and CLI — 4 live B2C sites and 10+ AI/agent prototypes. TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, Expo/React Native. Cursor + Claude as throughput multipliers.',
   openGraph: {
-    title: 'Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development',
+    title: 'Justin Scott | AI-Native Full-Stack Engineer',
     description:
-      'Full-stack engineer shipping production features and LLM-powered product flows. Angular, Spring Boot, TypeScript, Next.js, OpenAI, RAG.',
+      'AI-native full-stack engineer shipping production B2C sites, RAG systems, agentic tools, and an MCP server. TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, Expo/React Native.',
     type: 'website',
   },
 };
@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Hero
         headline="Justin Scott"
-        subheadline="Full-Stack Engineer — LLM Product Features & AI-Assisted Development. Full-stack engineer shipping production features for security-sensitive clients: Angular and Spring Boot services, PostgreSQL, and microservices—plus LLM-powered product work on devresumes.com and RAG systems. AI-native development with Cursor and modern tooling; code review, tests, and architecture stay non-negotiable. Strong AWS, Terraform, and CI/CD background."
+        subheadline="AI-Native Full-Stack Engineer. 15+ end-to-end projects in two years across web, mobile, and CLI — 4 live B2C sites and 10+ AI/agent prototypes including production RAG systems, agentic tools, and a Model Context Protocol server. Strong across TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, and Expo/React Native. Cursor + Claude are the throughput multipliers; tests, code review, and shipped reliability stay non-negotiable."
         primaryCTA={{
           text: 'View Projects',
           href: '/projects',
@@ -48,16 +48,17 @@ export default function Home() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-8 text-gray-600 dark:text-gray-300">
               <p>
-                I work full time as a software engineer at Idemia-NSS while continuing to{' '}
-                <strong className="text-gray-900 dark:text-white">design and ship my own products</strong> end to end—
-                including devresumes.com (guided editing, PDF export, LLM-assisted parsing) and projects like a RAG-based
-                Destiny 2 assistant (OpenAI embeddings, Pinecone, Claude) and data-heavy public sites.
+                I work full-time as a software engineer at Idemia-NSS while continuing to{' '}
+                <strong className="text-gray-900 dark:text-white">design and ship my own products</strong> end-to-end —
+                4 live B2C sites (devresumes.com, us-election-tracker.com, yourebeingrobbed.com, averylightfx.com)
+                plus 10+ AI/agent prototypes including production RAG systems, agentic tools, and a Model Context
+                Protocol server.
               </p>
               <p>
-                On the job I deliver with <strong className="text-gray-900 dark:text-white">Angular, Spring Boot, PostgreSQL</strong>, and Agile/SAFe teams for national-security clients. On side products I lean on TypeScript, React, Next.js, Spring Boot, and modern AI APIs—aligned with the stacks on my resume.
+                On the job I deliver with <strong className="text-gray-900 dark:text-white">Angular, Spring Boot, and PostgreSQL</strong> for enterprise clients in highly regulated industries — emphasis on reliability, security, and audit-ready code paths. On side products I lean across TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, and Expo/React Native, with serverless deploys (GCP Cloud Run + Neon) where they make economic sense.
               </p>
               <p>
-                Skills on my resume include Angular, AWS, Docker, FastAPI, Git, GitHub Actions, GitLab CI, Java, JavaScript, LLM product integration, Microservices, Next.js, Node.js, PostgreSQL, Python, RAG, React, Spring Boot, Tailwind CSS, TypeScript, and more—plus SAFe and HashiCorp Terraform certifications.
+                <strong className="text-gray-900 dark:text-white">AI-native workflow:</strong> Cursor and Claude are the throughput multipliers — they let me move from idea to working prototype in hours instead of weeks. Tests, code review, and shipped reliability stay non-negotiable. Based in Tampa, FL.
               </p>
             </div>
           </div>

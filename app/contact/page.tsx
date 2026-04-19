@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with Justin Scott. Email: jscottwv@gmail.com, Phone: (304) 282-4087',
+  description: 'Get in touch with Justin Scott — Tampa, FL. Email: jscottwv@gmail.com, Phone: (304) 282-4087',
   openGraph: {
     title: 'Contact | Justin Scott',
-    description: 'Get in touch with Justin Scott.',
+    description: 'Get in touch with Justin Scott — Tampa, FL.',
     type: 'website',
   },
 };
@@ -29,6 +29,13 @@ export default function ContactPage() {
               Contact Information
             </h2>
             <div className="space-y-6">
+              <div>
+                <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
+                  Location
+                </h3>
+                <p className="text-gray-900 dark:text-gray-100">Tampa, FL</p>
+              </div>
+
               <div>
                 <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
                   Email

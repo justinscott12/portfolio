@@ -23,7 +23,7 @@ export default function Hero({ headline, subheadline, primaryCTA, secondaryCTA }
             {subheadline}
           </p>
           <p className="mt-4 text-sm font-medium uppercase tracking-wider text-slate-500 dark:text-gray-400">
-            LLM Product Features · Full-Stack Delivery · AI-Assisted Development
+            Web · Mobile · AI Agents — Built to Ship
           </p>
           {(primaryCTA || secondaryCTA) && (
             <div className="mt-10 flex items-center justify-center gap-x-6">

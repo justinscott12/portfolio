@@ -14,7 +14,7 @@ export const projects: Project[] = [
     id: 'devresumes',
     title: 'devresumes.com',
     description:
-      'End-to-end resume product: guided editing, PDF export with templates, and LLM-assisted parsing and import from uploads or pasted text into a structured profile. Next.js client with React Hook Form, Zod, Stripe, and Spring Boot backend with JPA, PostgreSQL, Spring Security, GitHub OAuth, JWT, ATS-style scoring, job alignment, and Roast My Resume-style analyzers. Docker Compose-style workflows and GitHub Actions CI/CD.',
+      'Live B2C product — AI-powered resume builder for developers. GitHub OAuth pulls projects directly from your repos, OpenAI parses uploads or pasted text into structured profiles with schema validation, and real-time ATS scoring tailors output to a target job description. Stripe Checkout for paid tiers, resume analyzer for shareability. Spring Boot + JPA backend on GCP Cloud Run with Neon serverless Postgres — scale-to-zero infra keeps idle cost near $0 while handling bursty traffic. Next.js + React Hook Form + Zod frontend, Docker + GitHub Actions for CI/CD.',
     techStack: [
       'TypeScript',
       'React',
@@ -22,9 +22,12 @@ export const projects: Project[] = [
       'Tailwind CSS',
       'Spring Boot',
       'Java',
-      'PostgreSQL',
+      'Neon',
+      'GCP Cloud Run',
       'OpenAI API',
       'Stripe',
+      'GitHub OAuth',
+      'JWT',
       'Docker',
       'Jest',
       'GitHub Actions',
@@ -36,7 +39,7 @@ export const projects: Project[] = [
     id: 'us-election-tracker',
     title: 'US Election Tracker',
     description:
-      'Data-heavy election site: presidential history and results, state hubs, live results, demographics and census-oriented pages, and notable races with structured TypeScript datasets and reusable map and chart UI. Next.js API routes, strong SEO (sitemap, robots, Open Graph, JSON-LD), and Python plus Node scripts to build and validate datasets.',
+      'Live data-heavy election site: presidential history, state hubs, live results, demographics, and notable races. Interactive SVG US map with click-to-detail panels backed by structured TypeScript datasets. Authenticated REST API lets editorial updates ship without redeploying — built for election-night workflows. SEO-first: sitemap, JSON-LD, Open Graph, plus Python and Node validation scripts to keep datasets honest.',
     techStack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Netlify Blobs', 'Python', 'Node.js'],
     link: 'https://us-election-tracker.com',
     featured: true,
@@ -45,7 +48,7 @@ export const projects: Project[] = [
     id: 'dungeonhelper',
     title: 'dungeonhelper',
     description:
-      'Destiny 2 dungeon mechanics assistant using RAG: OpenAI embeddings, Pinecone retrieval, Claude for streaming answers, and Next.js API routes for chat and semantic search. Zod validation, rate limiting, response caching, and a responsive React UI for contest-style play.',
+      'RAG assistant for Destiny 2 dungeon mechanics. OpenAI embeddings + Pinecone retrieval + Claude streaming answers, served via Next.js API routes for chat and semantic search. Production-minded controls: Zod request validation, IP rate limiting, and response caching to keep API cost and latency predictable. Streaming UI for perceived speed during contest-style play.',
     techStack: [
       'TypeScript',
       'React',
@@ -65,7 +68,7 @@ export const projects: Project[] = [
     id: 'averylightfx',
     title: 'averylightfx',
     description:
-      'Community holiday light-show site: visit info, donations, media, maps and drive-up context, with seasonal Halloween and Christmas theming. NextAuth and bcrypt-backed credentials where needed; API routes for schedule and theme data. Responsive Tailwind UI.',
+      'Live site for a community holiday light show: visit info, Venmo donations, schedule, and seasonal Halloween / Christmas theming. Authenticated admin panel drives the live xSchedule lighting rig — playback, playlists, audio, brightness — with NextAuth + bcrypt-backed credentials and API routes for schedule and theme data.',
     techStack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'NextAuth.js', 'axios'],
     link: 'https://averylightfx.com/',
     featured: true,
@@ -74,7 +77,7 @@ export const projects: Project[] = [
     id: 'youre-being-robbed',
     title: 'youre-being-robbed',
     description:
-      'Data-forward site on wealth inequality, wages, housing, healthcare costs, and corporate profits vs wages. Tabbed navigation, section-specific titles for SEO, interactive Recharts visualizations, Tailwind and Lucide for readable statistics.',
+      'Live data-viz site on US wealth inequality: wages, housing, healthcare, corporate profits vs wages. 10+ interactive Recharts visualizations on top of government-sourced data, tabbed navigation with section-specific titles for SEO and shareability.',
     techStack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Recharts', 'Lucide React'],
     link: 'https://yourebeingrobbed.com/',
     featured: true,

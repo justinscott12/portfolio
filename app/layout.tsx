@@ -12,24 +12,27 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
+    default: "Justin Scott | AI-Native Full-Stack Engineer",
     template: "%s | Justin Scott",
   },
   description:
-    "Full-Stack Engineer — LLM Product Features & AI-Assisted Development. Angular, Spring Boot, PostgreSQL, TypeScript, Next.js, OpenAI, RAG, AWS, Terraform.",
+    "AI-Native Full-Stack Engineer. 15+ end-to-end projects across web, mobile, and CLI — live B2C sites, RAG systems, agentic tools, and an MCP server. TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, Expo/React Native.",
   keywords: [
     "Justin Scott",
-    "Software Engineer",
-    "Full-Stack",
-    "AI",
-    "LLM",
-    "Java",
-    "Spring Boot",
-    "Angular",
-    "React",
+    "AI-Native Engineer",
+    "Full-Stack Engineer",
+    "Cursor",
+    "Claude",
+    "RAG",
+    "LangGraph",
+    "MCP",
+    "Next.js",
     "TypeScript",
-    "AWS",
-    "Terraform",
+    "Spring Boot",
+    "FastAPI",
+    "React Native",
+    "Expo",
+    "Tampa",
     "Portfolio",
   ],
   authors: [{ name: "Justin Scott" }],
@@ -39,14 +42,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://justinscott.dev",
     siteName: "Justin Scott",
-    title: "Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
+    title: "Justin Scott | AI-Native Full-Stack Engineer",
     description:
-      "Full-stack engineer shipping production features and LLM-powered products. Angular, Spring Boot, TypeScript, Next.js, RAG.",
+      "AI-native full-stack engineer shipping production B2C sites, RAG systems, agentic tools, and an MCP server. TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, Expo/React Native.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Justin Scott | Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
-    description: "Full-stack engineer. LLM product features, Angular, Spring Boot, TypeScript, Next.js.",
+    title: "Justin Scott | AI-Native Full-Stack Engineer",
+    description: "AI-native full-stack engineer. 15+ shipped projects across web, mobile, and CLI. Cursor + Claude as throughput multipliers.",
   },
   robots: {
     index: true,
@@ -69,10 +72,16 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Justin Scott",
-              jobTitle: "Full-Stack Engineer — LLM Product Features & AI-Assisted Development",
+              jobTitle: "AI-Native Full-Stack Engineer",
               email: "jscottwv@gmail.com",
               telephone: "(304) 282-4087",
               url: "https://justinscott.dev",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Tampa",
+                addressRegion: "FL",
+                addressCountry: "US",
+              },
               sameAs: [
                 "https://justin-scott.dev",
                 "https://www.linkedin.com/in/justin-scott12",
@@ -83,7 +92,7 @@ export default function RootLayout({
                 name: "West Virginia University",
               },
               description:
-                "Full-stack engineer shipping production features and LLM-powered product flows. Angular, Spring Boot, PostgreSQL, TypeScript, Next.js, OpenAI, RAG.",
+                "AI-native full-stack engineer shipping production B2C sites, RAG systems, agentic tools, and an MCP server. TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, Expo/React Native.",
             }),
           }}
         />

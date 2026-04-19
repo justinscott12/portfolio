@@ -3,27 +3,55 @@ export interface SkillCategory {
   skills: string[];
 }
 
-/** Grouped view of skills as listed on resume PDF */
+/** Grouped view of skills aligned with resume PDF */
 export const skills: SkillCategory[] = [
   {
     category: 'Languages',
-    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL', 'HTML5', 'SASS', 'Bash'],
+    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL', 'Bash'],
   },
   {
     category: 'Frameworks & APIs',
-    skills: ['Angular', 'React', 'Next.js', 'Spring Boot', 'Node.js', 'REST API', 'Microservices', 'FastAPI', 'Tailwind CSS'],
+    skills: [
+      'Next.js',
+      'React',
+      'Angular',
+      'React Native',
+      'Expo',
+      'Spring Boot',
+      'Node.js',
+      'FastAPI',
+      'Fastify',
+      'Tailwind CSS',
+      'Microservices',
+      'JWT',
+    ],
+  },
+  {
+    category: 'AI & LLM',
+    skills: ['OpenAI API', 'Anthropic Claude API', 'RAG', 'Pinecone', 'LangGraph'],
   },
   {
     category: 'Data',
-    skills: ['PostgreSQL'],
+    skills: ['PostgreSQL', 'Neon (serverless Postgres)'],
   },
   {
     category: 'Cloud & DevOps',
-    skills: ['AWS', 'Terraform', 'Docker', 'DevOps', 'Git', 'GitHub Actions', 'GitLab CI', 'Linux'],
+    skills: [
+      'AWS',
+      'GCP',
+      'GCP Cloud Run',
+      'Terraform',
+      'Docker',
+      'Linux',
+      'Git',
+      'GitHub Actions',
+      'GitLab CI',
+      'Jenkins',
+    ],
   },
   {
-    category: 'AI & Product Delivery',
-    skills: ['LLM Product Integration', 'RAG', 'Full-stack Delivery'],
+    category: 'Payments',
+    skills: ['Stripe'],
   },
 ];
 
