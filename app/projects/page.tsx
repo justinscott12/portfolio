@@ -1,202 +1,108 @@
 import type { Metadata } from 'next';
 import ProjectCard from '@/components/ProjectCard';
 import PrototypeCard from '@/components/PrototypeCard';
+import SectionHeader from '@/components/SectionHeader';
 import { getAllProjects } from '@/lib/projects';
 import { getAllPrototypes } from '@/lib/prototypes';
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Portfolio of full-stack web applications, software projects, and experimental prototypes built with modern technologies including Java, Spring Boot, React, TypeScript, AI/ML, and more.',
+  description:
+    'The full portfolio — live B2C products plus AI, RAG, and agentic prototypes and experiments that Justin Scott has designed, built, and shipped.',
   openGraph: {
     title: 'Projects | Justin Scott',
-    description: 'Portfolio of full-stack web applications, software projects, and experimental prototypes.',
+    description:
+      'Live B2C products plus AI/RAG prototypes and experiments — everything built and shipped.',
     type: 'website',
   },
 };
+
+function ArrowUpRight() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-3.5 w-3.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M7 17 17 7M9 7h8v8" />
+    </svg>
+  );
+}
 
 export default function ProjectsPage() {
   const projects = getAllProjects();
   const prototypes = getAllPrototypes();
 
   return (
-    <div className="py-16 bg-white dark:bg-gray-900">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-            Projects & Prototypes
-          </h1>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            A collection of projects I&apos;ve built and deployed, plus experimental prototypes exploring AI, RAG systems, and innovative solutions
-          </p>
+    <>
+      {/* Intro */}
+      <section className="relative overflow-hidden border-b border-line-light dark:border-line">
+        <div
+          aria-hidden="true"
+          className="bg-grid pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]"
+        />
+        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+          <SectionHeader
+            eyebrow="Projects"
+            title="Everything I've built"
+            subtitle="Live B2C products up top, then the prototypes and experiments where I push new stacks, AI patterns, and agentic tooling."
+          />
         </div>
+      </section>
 
-        {/* Production Projects */}
-        {projects.length > 0 && (
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Production Projects
-            </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Prototypes & Experiments */}
-        {prototypes.length > 0 && (
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Prototypes & Experiments
-            </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {prototypes.map((prototype) => (
-                <PrototypeCard key={prototype.id} prototype={prototype} />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Public Repositories */}
-        <div className="mt-16 pt-16 border-t border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Public Repositories
+      {/* Live & production products */}
+      <section className="border-b border-line-light dark:border-line">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/45 dark:text-paper/45">
+            Live &amp; production
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Explore my open-source projects and contributions on GitHub.
-          </p>
-          <div className="space-y-3">
-            <a
-              href="https://github.com/justinscott12/dungeonhelper"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    dungeonhelper
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    RAG assistant—OpenAI embeddings, Pinecone, Claude, Next.js API routes (TypeScript)
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/justinscott12/youre-being-robbed"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    youre-being-robbed
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    Wealth inequality data viz—Next.js, Recharts, Tailwind (TypeScript)
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/justinscott12/ai-golf-caddie"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    ai-golf-caddie
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    AI-powered golf strategy app with LangGraph agents and vision AI
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/justinscott12/pdf-toolkit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    pdf-toolkit
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    Privacy-focused PDF toolkit - all processing happens client-side
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/justinscott12/legaltrace"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    legaltrace
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    AI-powered lease compliance checker with agentic workflows
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/justinscott12/portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    portfolio
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    This portfolio website - Next.js 16, TypeScript, Tailwind CSS v4
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
-            </a>
+          <div
+            data-reveal
+            className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          >
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Prototypes & experiments */}
+      <section className="bg-ink/[0.02] dark:bg-paper/[0.02]">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/45 dark:text-paper/45">
+            Prototypes &amp; experiments
+          </h2>
+          <div
+            data-reveal
+            className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          >
+            {prototypes.map((prototype) => (
+              <PrototypeCard key={prototype.id} prototype={prototype} />
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-2xl border border-line-light bg-paper-2 p-6 text-center dark:border-line dark:bg-surface">
+            <p className="text-sm text-ink/70 dark:text-paper/70">
+              More repositories, works-in-progress, and one-off experiments live
+              on GitHub.
+            </p>
             <a
               href="https://github.com/justinscott12"
               target="_blank"
               rel="noopener noreferrer"
-              className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-md transition-shadow"
+              className="link-accent mt-2 inline-flex items-center gap-1.5 text-sm"
             >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    View All Repositories
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    See all my public repositories on GitHub
-                  </p>
-                </div>
-                <span className="text-blue-600 dark:text-blue-400">→</span>
-              </div>
+              See all repos on GitHub <ArrowUpRight />
             </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
-
