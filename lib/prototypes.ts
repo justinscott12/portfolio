@@ -5,6 +5,9 @@ export interface Prototype {
   techStack: string[];
   link?: string;
   githubLink?: string;
+  /** Optional screenshot (16:9 WebP in /public/projects). Most prototypes have no live site. */
+  image?: string;
+  imageAlt?: string;
   featured: boolean;
 }
 

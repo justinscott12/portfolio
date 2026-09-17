@@ -1,53 +1,61 @@
-interface HeroProps {
-  headline: string;
-  subheadline: string;
-  primaryCTA?: {
-    text: string;
-    href: string;
-  };
-  secondaryCTA?: {
-    text: string;
-    href: string;
-  };
-}
-
-export default function Hero({ headline, subheadline, primaryCTA, secondaryCTA }: HeroProps) {
+export default function Hero() {
   return (
-    <section className="relative bg-slate-50 dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-            {headline}
+    <section className="relative overflow-hidden border-b border-line-light dark:border-line">
+      {/* Atmosphere: faded grid + a single restrained accent glow */}
+      <div
+        aria-hidden="true"
+        className="bg-grid pointer-events-none absolute inset-0 opacity-70 [mask-image:radial-gradient(ellipse_60%_55%_at_50%_0%,black,transparent)]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-28 left-1/2 h-72 w-[44rem] -translate-x-1/2 rounded-full bg-accent/15 blur-3xl dark:bg-accent/20"
+      />
+
+      <div className="relative mx-auto max-w-5xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="max-w-3xl">
+          <div
+            className="rise flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-accent-strong dark:text-accent-soft"
+          >
+            <span className="h-px w-6 bg-accent" aria-hidden="true" />
+            4 live products · MCP server · WVU Computer Science
+          </div>
+
+          <h1
+            className="rise rise-1 mt-5 font-display text-5xl font-bold tracking-tight text-ink dark:text-paper sm:text-6xl"
+          >
+            Justin Scott
           </h1>
-          <p className="mt-5 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
-            {subheadline}
+
+          <p
+            className="rise rise-2 mt-5 text-xl leading-8 text-ink/80 dark:text-paper/80 sm:text-2xl sm:leading-9"
+          >
+            I design and ship production software end-to-end. Four live B2C
+            products, an MCP server, and real RAG/agentic systems —{' '}
+            <span className="font-medium text-ink dark:text-paper">
+              built for reliability, not just demos.
+            </span>
           </p>
-          <p className="mt-4 text-sm font-medium uppercase tracking-wider text-slate-500 dark:text-gray-400">
-            Web · Mobile · AI Agents — Built to Ship
+
+          <p
+            className="rise rise-3 mt-5 max-w-2xl text-base leading-7 text-ink/60 dark:text-paper/60"
+          >
+            Full-stack engineer (TypeScript · Java/Spring Boot · Python) at
+            Idemia-NSS, building my own products on the side. AI-native
+            workflow, human-grade standards.
           </p>
-          {(primaryCTA || secondaryCTA) && (
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              {primaryCTA && (
-                <a
-                  href={primaryCTA.href}
-                  className="rounded-md bg-slate-900 dark:bg-white px-6 py-3 text-base font-semibold text-white dark:text-gray-900 shadow-sm hover:bg-slate-800 dark:hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 dark:focus-visible:outline-white transition-colors"
-                >
-                  {primaryCTA.text}
-                </a>
-              )}
-              {secondaryCTA && (
-                <a
-                  href={secondaryCTA.href}
-                  className="text-base font-semibold leading-7 text-gray-900 dark:text-white hover:text-slate-600 dark:hover:text-gray-300 transition-colors"
-                >
-                  {secondaryCTA.text} <span aria-hidden="true">→</span>
-                </a>
-              )}
-            </div>
-          )}
+
+          <div
+            className="rise rise-4 mt-9 flex flex-wrap items-center gap-3"
+          >
+            <a href="#work" className="btn btn-primary">
+              See my work
+            </a>
+            <a href="#contact" className="btn btn-secondary">
+              Get in touch
+            </a>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

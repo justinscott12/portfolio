@@ -1,40 +1,50 @@
 import Link from 'next/link';
 
+const navLinks = [
+  { href: '/#work', label: 'Work' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/#about', label: 'About' },
+  { href: '/#experience', label: 'Experience' },
+  { href: '/#contact', label: 'Contact' },
+];
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/experience', label: 'Experience' },
-    { href: '/education', label: 'Education' },
-    { href: '/skills', label: 'Skills' },
-    { href: '/contact', label: 'Contact' },
-  ];
-
   return (
-    <footer className="bg-gray-900 dark:bg-gray-950 text-gray-300">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Personal Info */}
+    <footer className="border-t border-line-light bg-paper dark:border-line dark:bg-ink">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+          {/* Identity */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <span className="text-xl font-bold text-white">Justin Scott</span>
+            <div className="flex items-center gap-2.5">
+              <span
+                className="grid h-8 w-8 place-items-center rounded-lg bg-accent font-display text-sm font-bold tracking-tight text-[#04231a]"
+                aria-hidden="true"
+              >
+                JS
+              </span>
+              <span className="font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
+                Justin Scott
+              </span>
             </div>
-            <p className="text-sm text-gray-400">
-              AI-Native Full-Stack Engineer. Live B2C products, RAG systems, agentic tools, and an MCP server. Tampa, FL.
+            <p className="mt-4 max-w-xs text-sm leading-6 text-ink/60 dark:text-paper/60">
+              Full-stack engineer shipping live B2C products, RAG/agentic
+              systems, and an MCP server. Tampa, FL.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Explore */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/50 dark:text-paper/50">
+              Explore
+            </h2>
+            <ul className="mt-4 space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                    className="text-sm text-ink/70 transition-colors hover:text-accent-strong dark:text-paper/70 dark:hover:text-accent-soft"
                   >
                     {link.label}
                   </Link>
@@ -43,14 +53,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact & Social */}
+          {/* Connect */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Connect</h3>
-            <ul className="space-y-2">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/50 dark:text-paper/50">
+              Connect
+            </h2>
+            <ul className="mt-4 space-y-2.5">
               <li>
                 <a
                   href="mailto:jscottwv@gmail.com"
-                  className="text-gray-400 hover:text-white transition-colors text-sm break-all"
+                  className="text-sm text-ink/70 transition-colors hover:text-accent-strong dark:text-paper/70 dark:hover:text-accent-soft"
                 >
                   jscottwv@gmail.com
                 </a>
@@ -60,19 +72,9 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/justin-scott12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-sm text-ink/70 transition-colors hover:text-accent-strong dark:text-paper/70 dark:hover:text-accent-soft"
                 >
                   LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://justin-scott.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  justin-scott.dev
                 </a>
               </li>
               <li>
@@ -80,30 +82,28 @@ export default function Footer() {
                   href="https://github.com/justinscott12"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-sm text-ink/70 transition-colors hover:text-accent-strong dark:text-paper/70 dark:hover:text-accent-soft"
                 >
-                  GitHub Profile
+                  GitHub
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/justinscott12/portfolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/Justin-Scott-Resume.pdf"
+                  download
+                  className="text-sm text-ink/70 transition-colors hover:text-accent-strong dark:text-paper/70 dark:hover:text-accent-soft"
                 >
-                  Portfolio Source
+                  Résumé (PDF)
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 dark:border-gray-700 text-center text-sm text-gray-400">
-          <p>&copy; {currentYear} Justin Scott. All rights reserved.</p>
+        <div className="mt-12 border-t border-line-light pt-8 text-sm text-ink/50 dark:border-line dark:text-paper/50">
+          <p>&copy; {currentYear} Justin Scott. Built with Next.js &amp; Tailwind.</p>
         </div>
       </div>
     </footer>
   );
 }
-

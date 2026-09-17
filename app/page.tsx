@@ -26,18 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero
-        headline="Justin Scott"
-        subheadline="AI-Native Full-Stack Engineer. 15+ end-to-end projects in two years across web, mobile, and CLI — 4 live B2C sites and 10+ AI/agent prototypes including production RAG systems, agentic tools, and a Model Context Protocol server. Strong across TypeScript/Next.js, Java/Spring Boot, Python/FastAPI, and Expo/React Native. Cursor + Claude are the throughput multipliers; tests, code review, and shipped reliability stay non-negotiable."
-        primaryCTA={{
-          text: 'View Projects',
-          href: '/projects',
-        }}
-        secondaryCTA={{
-          text: 'View Experience',
-          href: '/experience',
-        }}
-      />
+      <Hero />
 
       {/* About Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
