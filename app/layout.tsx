@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://justin-scott.dev"),
   title: {
     default: "Justin Scott | AI-Native Full-Stack Engineer",
     template: "%s | Justin Scott",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://justinscott.dev",
+    url: "https://justin-scott.dev",
     siteName: "Justin Scott",
     title: "Justin Scott | AI-Native Full-Stack Engineer",
     description:
@@ -74,8 +75,7 @@ export default function RootLayout({
               name: "Justin Scott",
               jobTitle: "AI-Native Full-Stack Engineer",
               email: "jscottwv@gmail.com",
-              telephone: "(304) 282-4087",
-              url: "https://justinscott.dev",
+              url: "https://justin-scott.dev",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Tampa",
@@ -83,7 +83,6 @@ export default function RootLayout({
                 addressCountry: "US",
               },
               sameAs: [
-                "https://justin-scott.dev",
                 "https://www.linkedin.com/in/justin-scott12",
                 "https://github.com/justinscott12",
               ],

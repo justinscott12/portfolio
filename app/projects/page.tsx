@@ -26,7 +26,7 @@ export default function ProjectsPage() {
             Projects & Prototypes
           </h1>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            A collection of projects I've built and deployed, plus experimental prototypes exploring AI, RAG systems, and innovative solutions
+            A collection of projects I&apos;ve built and deployed, plus experimental prototypes exploring AI, RAG systems, and innovative solutions
           </p>
         </div>
 

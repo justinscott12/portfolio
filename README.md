@@ -57,8 +57,7 @@ justinscott-portfolio/
 │   ├── Hero.tsx            # Hero section component
 │   ├── ProjectCard.tsx     # Project display card
 │   ├── ExperienceCard.tsx  # Experience timeline card
-│   ├── SkillsSection.tsx   # Skills category display
-│   └── ContactForm.tsx     # Contact form with validation
+│   └── SkillsSection.tsx   # Skills category display
 ├── lib/                    # Data and utilities
 │   ├── projects.ts         # Project data management
 │   ├── experience.ts       # Professional experience data
@@ -213,7 +212,6 @@ Copyright © 2024 Justin Scott. All rights reserved.
 
 For questions or inquiries:
 - **Email**: jscottwv@gmail.com
-- **Phone**: (304) 282-4087
 - **LinkedIn**: [linkedin.com/in/justin-scott12](https://www.linkedin.com/in/justin-scott12)
 - **GitHub**: [github.com/justinscott12](https://github.com/justinscott12)
 
