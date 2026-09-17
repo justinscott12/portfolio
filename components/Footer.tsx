@@ -87,15 +87,6 @@ export default function Footer() {
                   GitHub
                 </a>
               </li>
-              <li>
-                <a
-                  href="/Justin-Scott-Resume.pdf"
-                  download
-                  className="text-sm text-ink/70 transition-colors hover:text-accent-strong dark:text-paper/70 dark:hover:text-accent-soft"
-                >
-                  Résumé (PDF)
-                </a>
-              </li>
             </ul>
           </div>
         </div>

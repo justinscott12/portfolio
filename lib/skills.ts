@@ -3,36 +3,44 @@ export interface SkillCategory {
   skills: string[];
 }
 
-/** Grouped view of skills aligned with resume PDF */
+/** Grouped for a fast recruiter scan — strongest/most in-demand first, no orphan groups. */
 export const skills: SkillCategory[] = [
   {
     category: 'Languages',
-    skills: ['TypeScript', 'JavaScript', 'Java', 'Python', 'SQL', 'Bash'],
+    skills: ['TypeScript', 'Python', 'Java', 'JavaScript', 'SQL', 'Bash'],
   },
   {
     category: 'Frameworks & APIs',
     skills: [
       'Next.js',
       'React',
-      'Angular',
-      'React Native',
-      'Expo',
       'Spring Boot',
+      'Angular',
       'Node.js',
       'FastAPI',
-      'Fastify',
-      'Tailwind CSS',
+      'React Native',
+      'Expo',
+      'REST APIs',
       'Microservices',
-      'JWT',
+      'Tailwind CSS',
+      'Stripe',
     ],
   },
   {
     category: 'AI & LLM',
-    skills: ['OpenAI API', 'Anthropic Claude API', 'RAG', 'Pinecone', 'LangGraph'],
+    skills: [
+      'OpenAI API',
+      'Anthropic Claude API',
+      'RAG',
+      'LangGraph',
+      'LangChain',
+      'Pinecone',
+      'MCP',
+    ],
   },
   {
     category: 'Data',
-    skills: ['PostgreSQL', 'Neon (serverless Postgres)'],
+    skills: ['PostgreSQL', 'Neon (serverless Postgres)', 'pgvector', 'Redis'],
   },
   {
     category: 'Cloud & DevOps',
@@ -40,18 +48,14 @@ export const skills: SkillCategory[] = [
       'AWS',
       'GCP',
       'GCP Cloud Run',
-      'Terraform',
       'Docker',
-      'Linux',
-      'Git',
+      'Terraform',
       'GitHub Actions',
       'GitLab CI',
       'Jenkins',
+      'Linux',
+      'Git',
     ],
-  },
-  {
-    category: 'Payments',
-    skills: ['Stripe'],
   },
 ];
 

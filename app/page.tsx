@@ -5,7 +5,7 @@ import ExperienceCard from '@/components/ExperienceCard';
 import EducationCard from '@/components/EducationCard';
 import SkillsSection from '@/components/SkillsSection';
 import SectionHeader from '@/components/SectionHeader';
-import { getFeaturedProjects } from '@/lib/projects';
+import { getHomepageFeatured } from '@/lib/featured';
 import { getAllExperiences } from '@/lib/experience';
 import { getAllEducation } from '@/lib/education';
 import { getAllSkills } from '@/lib/skills';
@@ -13,7 +13,7 @@ import { getAllSkills } from '@/lib/skills';
 export const metadata: Metadata = {
   title: { absolute: 'Justin Scott — Full-Stack Engineer' },
   description:
-    'Full-stack engineer shipping production software end-to-end — four live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.',
+    'Full-stack engineer shipping production software end-to-end — live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.',
   // OpenGraph/Twitter (incl. og.png + url) inherited from the root layout.
 };
 
@@ -53,7 +53,7 @@ function MailIcon() {
 }
 
 export default function Home() {
-  const featured = getFeaturedProjects();
+  const featured = getHomepageFeatured();
   const experiences = getAllExperiences();
   const education = getAllEducation();
   const skills = getAllSkills();
@@ -72,7 +72,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="Featured work"
               title="Products I've shipped"
-              subtitle="Three live products, built and run end-to-end — real users, real infrastructure, not demos."
+              subtitle="A live data platform with real users, an MCP server, and an agentic AI tool — designed and built end-to-end."
             />
           </div>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -121,19 +121,16 @@ export default function Home() {
               code aren&apos;t optional.
             </p>
             <p>
-              On my own time I design and ship products end-to-end:{' '}
+              On my own time I design and ship products end-to-end: a{' '}
+              <strong className="font-semibold text-ink dark:text-paper">
+                US Election Tracker
+              </strong>{' '}
+              with real users,{' '}
               <strong className="font-semibold text-ink dark:text-paper">
                 DevResumes
               </strong>{' '}
-              (AI resume builder, Stripe, GCP Cloud Run + Neon), a{' '}
-              <strong className="font-semibold text-ink dark:text-paper">
-                US Election Tracker
-              </strong>
-              , and{' '}
-              <strong className="font-semibold text-ink dark:text-paper">
-                You&apos;re Being Robbed
-              </strong>{' '}
-              (wealth-inequality data viz), plus agentic and RAG tools and a{' '}
+              (an AI resume builder with Stripe, GCP Cloud Run + Neon), plus
+              agentic and RAG tools and a{' '}
               <strong className="font-semibold text-ink dark:text-paper">
                 Model Context Protocol server
               </strong>
@@ -235,8 +232,8 @@ export default function Home() {
                 {"Let's talk"}
               </h2>
               <p className="mt-4 text-lg leading-8 text-ink/70 dark:text-paper/70">
-                I&apos;m always open to discussing new opportunities and
-                interesting products. Based in Tampa, FL.
+                Always up for talking shop or the right opportunity. Based in
+                Tampa, FL — open to remote and mostly-remote hybrid.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                 <a href="mailto:jscottwv@gmail.com" className="btn btn-primary">
@@ -249,13 +246,6 @@ export default function Home() {
                   className="btn btn-secondary"
                 >
                   LinkedIn
-                </a>
-                <a
-                  href="/Justin-Scott-Resume.pdf"
-                  download
-                  className="btn btn-secondary"
-                >
-                  Résumé (PDF)
                 </a>
               </div>
               <p className="mt-6 text-sm text-ink/60 dark:text-paper/60">

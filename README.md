@@ -69,8 +69,7 @@ justinscott-portfolio/
 │   └── skills.ts           # Skills by category
 └── public/                 # Static assets
     ├── projects/           # Product screenshots (WebP)
-    ├── og.png              # Social share image (1200×630)
-    └── Justin-Scott-Resume.pdf
+    └── og.png              # Social share image (1200×630)
 ```
 
 ### Design Patterns & Best Practices
@@ -126,7 +125,7 @@ The whole story on a single, scannable page:
 - **Experience** — condensed timeline of roles and measurable wins
 - **Skills** — grouped by category, kept compact
 - **Education** — WVU B.S. Computer Science
-- **Contact** — email, LinkedIn, and résumé download
+- **Contact** — email + LinkedIn
 
 ### Projects (`/projects`)
 - Every live product plus the prototypes & experiments, each listed once

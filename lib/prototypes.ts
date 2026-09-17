@@ -8,6 +8,8 @@ export interface Prototype {
   /** Optional screenshot (16:9 WebP in /public/projects). Most prototypes have no live site. */
   image?: string;
   imageAlt?: string;
+  /** Short label shown on the branded cover when there's no screenshot. */
+  kicker?: string;
   featured: boolean;
 }
 
@@ -71,8 +73,9 @@ export const prototypes: Prototype[] = [
     id: 'legaltrace',
     title: 'LegalTrace - Lease Compliance',
     description: 'AI-powered commercial lease compliance checker for Florida property managers and landlords. Uses agentic AI with LangGraph to analyze lease agreements against Florida Chapter 83 statutes, identifying compliance issues and providing actionable recommendations. Features self-correcting workflows, human-in-the-loop interrupts, state-aware retrieval planning, and real-time reasoning trace. Built with FastAPI, Next.js 15, PostgreSQL with pgvector, and MCP protocol.',
-    techStack: ['Next.js 15', 'TypeScript', 'FastAPI', 'LangGraph', 'LangChain', 'PostgreSQL', 'pgvector', 'MCP', 'Tailwind CSS'],
+    techStack: ['LangGraph', 'FastAPI', 'Next.js 15', 'pgvector', 'MCP', 'TypeScript'],
     githubLink: 'https://github.com/justinscott12/legaltrace',
+    kicker: 'Agentic AI',
     featured: true,
   },
   {
@@ -93,9 +96,10 @@ export const prototypes: Prototype[] = [
   {
     id: 'personal-finance-dashboard',
     title: 'Personal Finance Dashboard',
-    description: 'Web dashboard for personal finance scenarios with interactive sliders (salary, rent, expenses). Includes an MCP server for Cursor: ask natural-language questions like savings rate, rent affordability, or scenario comparisons. Tools expose get_financial_snapshot, calculate_scenario, compare_scenarios, and rent_affordability. Finance model matches Desmos-style equations (bi-weekly pay, deductions, take-home, savings %).',
-    techStack: ['Next.js', 'React', 'TypeScript', 'Python', 'MCP', 'Tailwind'],
+    description: 'Personal-finance scenario dashboard with interactive sliders (salary, rent, expenses), plus a Model Context Protocol server that lets an AI assistant answer natural-language questions — savings rate, rent affordability, scenario comparisons — via typed tools (get_financial_snapshot, calculate_scenario, compare_scenarios).',
+    techStack: ['MCP', 'Next.js', 'TypeScript', 'Python', 'React', 'Tailwind'],
     githubLink: 'https://github.com/justinscott12/personal-finance-dashboard',
+    kicker: 'MCP server',
     featured: true,
   },
 ];

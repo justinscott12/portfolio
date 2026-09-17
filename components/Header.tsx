@@ -82,13 +82,6 @@ export default function Header() {
                 </Link>
               );
             })}
-            <a
-              href="/Justin-Scott-Resume.pdf"
-              download
-              className="btn btn-secondary ml-2 px-4 py-2 text-sm"
-            >
-              Résumé
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -131,14 +124,6 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="/Justin-Scott-Resume.pdf"
-              download
-              className="btn btn-primary mt-2 w-full"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Download Résumé
-            </a>
           </div>
         )}
       </nav>

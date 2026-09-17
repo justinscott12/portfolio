@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Justin Scott",
   },
   description:
-    "Full-stack engineer shipping production software end-to-end — four live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.",
+    "Full-stack engineer shipping production software end-to-end — live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.",
   keywords: [
     "Justin Scott",
     "AI-Native Engineer",
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     siteName: "Justin Scott",
     title: "Justin Scott — Full-Stack Engineer",
     description:
-      "I design and ship production software end-to-end. Four live B2C products, an MCP server, and real RAG/agentic systems — built for reliability, not just demos.",
+      "I design and ship production software end-to-end. Live B2C products, an MCP server, and real RAG/agentic systems — built for reliability, not just demos.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Justin Scott — Full-Stack Engineer. Four live products, an MCP server, and real RAG/agentic systems.",
+        alt: "Justin Scott — Full-Stack Engineer. Live products, an MCP server, and real RAG/agentic systems.",
       },
     ],
   },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Justin Scott — Full-Stack Engineer",
     description:
-      "I design and ship production software end-to-end — four live products, an MCP server, and real RAG/agentic systems.",
+      "I design and ship production software end-to-end — live products, an MCP server, and real RAG/agentic systems.",
     images: ["/og.png"],
   },
   robots: {

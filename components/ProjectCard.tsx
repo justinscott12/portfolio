@@ -42,10 +42,25 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
             className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
           />
         ) : (
-          <div className="bg-grid flex h-full w-full items-center justify-center bg-ink/[0.03] dark:bg-ink">
-            <span className="font-display text-sm font-semibold text-ink/40 dark:text-paper/40">
-              {project.title}
-            </span>
+          <div className="relative flex h-full w-full items-center justify-center overflow-hidden bg-paper-2 dark:bg-ink">
+            <div
+              className="bg-grid absolute inset-0 opacity-70 [mask-image:radial-gradient(ellipse_75%_75%_at_50%_10%,black,transparent)]"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute -top-8 left-1/2 h-28 w-64 -translate-x-1/2 rounded-full bg-accent/20 blur-3xl dark:bg-accent/25"
+              aria-hidden="true"
+            />
+            <div className="relative px-6 text-center">
+              {project.kicker && (
+                <div className="text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-accent-strong dark:text-accent-soft">
+                  {project.kicker}
+                </div>
+              )}
+              <div className="mt-1.5 font-display text-2xl font-bold tracking-tight text-ink dark:text-paper">
+                {project.title}
+              </div>
+            </div>
           </div>
         )}
         {isLive && (
