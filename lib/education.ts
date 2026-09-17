@@ -18,11 +18,11 @@ export const education: Education[] = [
     location: 'Morgantown, WV',
     highlights: [
       "Dean's List",
-      'PROMISE Scholarship',
       'Scholarship of Distinction',
-      'Operating Systems',
       'AWS Senior Capstone',
       'Penetration Testing',
+      'PROMISE Scholarship',
+      'Operating Systems',
       'SysAdmin',
       'Blue Team',
       'Ansible',

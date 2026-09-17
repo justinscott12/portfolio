@@ -2,37 +2,49 @@ import { Experience } from '@/lib/experience';
 
 interface ExperienceCardProps {
   experience: Experience;
+  /** Cap the number of bullets shown (condensed timeline on the one-pager). */
+  limit?: number;
 }
 
-export default function ExperienceCard({ experience }: ExperienceCardProps) {
+export default function ExperienceCard({ experience, limit }: ExperienceCardProps) {
+  const bullets = limit
+    ? experience.achievements.slice(0, limit)
+    : experience.achievements;
+
   return (
-    <div className="relative pl-8 pb-8 border-l-2 border-slate-200 dark:border-gray-700 last:border-l-0 last:pb-0">
-      <div className="absolute -left-2 top-0 h-4 w-4 rounded-full bg-slate-900 dark:bg-white"></div>
-      <div className="mb-4">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            {experience.role}
-          </h3>
-          <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">
-            {experience.startDate} - {experience.endDate}
+    <li className="relative border-l border-line-light pb-9 pl-7 last:pb-0 dark:border-line">
+      <span
+        className="absolute -left-[5.5px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent ring-4 ring-paper dark:ring-ink"
+        aria-hidden="true"
+      />
+      <div className="flex flex-col gap-x-3 sm:flex-row sm:items-baseline sm:justify-between">
+        <h3 className="font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
+          {experience.role}{' '}
+          <span className="text-accent-strong dark:text-accent-soft">
+            · {experience.company}
           </span>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-          <span className="font-medium">{experience.company}</span>
-          <span className="hidden sm:inline">•</span>
-          <span>{experience.location}</span>
-          <span className="hidden sm:inline">•</span>
-          <span>{experience.type}</span>
-        </div>
+        </h3>
+        <span className="shrink-0 text-sm tabular-nums text-ink/50 dark:text-paper/50">
+          {experience.startDate} – {experience.endDate}
+        </span>
       </div>
-      <ul className="space-y-2">
-        {experience.achievements.map((achievement, index) => (
-          <li key={index} className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-            {achievement}
+      <p className="mt-1 text-sm text-ink/50 dark:text-paper/50">
+        {experience.location} · {experience.type}
+      </p>
+      <ul className="mt-3 space-y-2">
+        {bullets.map((achievement, index) => (
+          <li
+            key={index}
+            className="flex gap-2.5 text-sm leading-relaxed text-ink/75 dark:text-paper/75"
+          >
+            <span
+              className="mt-[0.5rem] h-1 w-1 shrink-0 rounded-full bg-accent/70"
+              aria-hidden="true"
+            />
+            <span>{achievement}</span>
           </li>
         ))}
       </ul>
-    </div>
+    </li>
   );
 }
-

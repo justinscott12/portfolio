@@ -2,35 +2,41 @@ import { Education } from '@/lib/education';
 
 interface EducationCardProps {
   education: Education;
+  /** Show only the top N highlights (keeps the one-pager compact). */
+  maxHighlights?: number;
 }
 
-export default function EducationCard({ education: edu }: EducationCardProps) {
+export default function EducationCard({
+  education: edu,
+  maxHighlights,
+}: EducationCardProps) {
+  const highlights = edu.highlights
+    ? maxHighlights
+      ? edu.highlights.slice(0, maxHighlights)
+      : edu.highlights
+    : [];
+
   return (
-    <div className="relative pl-8 pb-8 border-l-2 border-slate-200 dark:border-gray-700 last:border-l-0 last:pb-0">
-      <div className="absolute -left-2 top-0 h-4 w-4 rounded-full bg-slate-900 dark:bg-white"></div>
-      <div className="mb-4">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            {edu.degree}
-          </h3>
-          <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">
-            {edu.startDate ? `${edu.startDate} – ${edu.endDate}` : edu.endDate}
-          </span>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-          <span className="font-medium">{edu.school}</span>
-          <span className="hidden sm:inline">·</span>
-          <span>{edu.location}</span>
-        </div>
+    <div className="rounded-2xl border border-line-light bg-paper-2 p-6 dark:border-line dark:bg-surface">
+      <div className="flex flex-col gap-x-3 sm:flex-row sm:items-baseline sm:justify-between">
+        <h3 className="font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
+          {edu.degree}
+        </h3>
+        <span className="shrink-0 text-sm tabular-nums text-ink/50 dark:text-paper/50">
+          {edu.startDate ? `${edu.startDate} – ${edu.endDate}` : edu.endDate}
+        </span>
       </div>
-      {edu.highlights && edu.highlights.length > 0 && (
-        <ul className="space-y-2">
-          {edu.highlights.map((item, index) => (
-            <li key={index} className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+      <p className="mt-1 text-sm text-ink/60 dark:text-paper/60">
+        {edu.school} · {edu.location}
+      </p>
+      {highlights.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-1.5">
+          {highlights.map((item) => (
+            <span key={item} className="tag">
               {item}
-            </li>
+            </span>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

@@ -6,16 +6,13 @@ interface SkillsSectionProps {
 
 export default function SkillsSection({ category }: SkillsSectionProps) {
   return (
-    <div className="mb-8">
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    <div>
+      <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink/45 dark:text-paper/45">
         {category.category}
       </h3>
-      <div className="flex flex-wrap gap-3">
+      <div className="mt-3 flex flex-wrap gap-1.5">
         {category.skills.map((skill) => (
-          <span
-            key={skill}
-            className="inline-flex items-center rounded-lg bg-blue-100 dark:bg-blue-900/30 px-4 py-2 text-sm font-medium text-blue-800 dark:text-blue-200 border border-blue-200 dark:border-blue-800"
-          >
+          <span key={skill} className="tag">
             {skill}
           </span>
         ))}
@@ -23,4 +20,3 @@ export default function SkillsSection({ category }: SkillsSectionProps) {
     </div>
   );
 }
-
