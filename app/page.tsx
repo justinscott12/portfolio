@@ -11,15 +11,10 @@ import { getAllEducation } from '@/lib/education';
 import { getAllSkills } from '@/lib/skills';
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: { absolute: 'Justin Scott — Full-Stack Engineer' },
   description:
     'Full-stack engineer shipping production software end-to-end — four live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.',
-  openGraph: {
-    title: 'Justin Scott | Full-Stack Engineer',
-    description:
-      'I design and ship production software end-to-end. Four live B2C products, an MCP server, and real RAG/agentic systems — built for reliability, not just demos.',
-    type: 'website',
-  },
+  // OpenGraph/Twitter (incl. og.png + url) inherited from the root layout.
 };
 
 function ArrowRight() {
@@ -263,7 +258,7 @@ export default function Home() {
                   Résumé (PDF)
                 </a>
               </div>
-              <p className="mt-6 text-sm text-ink/50 dark:text-paper/50">
+              <p className="mt-6 text-sm text-ink/60 dark:text-paper/60">
                 <a href="mailto:jscottwv@gmail.com" className="link-accent">
                   jscottwv@gmail.com
                 </a>{' '}

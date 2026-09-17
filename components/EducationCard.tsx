@@ -22,7 +22,7 @@ export default function EducationCard({
         <h3 className="font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
           {edu.degree}
         </h3>
-        <span className="shrink-0 text-sm tabular-nums text-ink/50 dark:text-paper/50">
+        <span className="shrink-0 text-sm tabular-nums text-ink/60 dark:text-paper/60">
           {edu.startDate ? `${edu.startDate} – ${edu.endDate}` : edu.endDate}
         </span>
       </div>

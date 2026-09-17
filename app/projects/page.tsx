@@ -9,12 +9,7 @@ export const metadata: Metadata = {
   title: 'Projects',
   description:
     'The full portfolio — live B2C products plus AI, RAG, and agentic prototypes and experiments that Justin Scott has designed, built, and shipped.',
-  openGraph: {
-    title: 'Projects | Justin Scott',
-    description:
-      'Live B2C products plus AI/RAG prototypes and experiments — everything built and shipped.',
-    type: 'website',
-  },
+  // OpenGraph/Twitter (incl. og.png + url) inherited from the root layout.
 };
 
 function ArrowUpRight() {
@@ -58,7 +53,7 @@ export default function ProjectsPage() {
       {/* Live & production products */}
       <section className="border-b border-line-light dark:border-line">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/45 dark:text-paper/45">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/60 dark:text-paper/60">
             Live &amp; production
           </h2>
           <div
@@ -75,7 +70,7 @@ export default function ProjectsPage() {
       {/* Prototypes & experiments */}
       <section className="bg-ink/[0.02] dark:bg-paper/[0.02]">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/45 dark:text-paper/45">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/60 dark:text-paper/60">
             Prototypes &amp; experiments
           </h2>
           <div

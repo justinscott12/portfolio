@@ -24,11 +24,11 @@ export default function ExperienceCard({ experience, limit }: ExperienceCardProp
             · {experience.company}
           </span>
         </h3>
-        <span className="shrink-0 text-sm tabular-nums text-ink/50 dark:text-paper/50">
+        <span className="shrink-0 text-sm tabular-nums text-ink/60 dark:text-paper/60">
           {experience.startDate} – {experience.endDate}
         </span>
       </div>
-      <p className="mt-1 text-sm text-ink/50 dark:text-paper/50">
+      <p className="mt-1 text-sm text-ink/60 dark:text-paper/60">
         {experience.location} · {experience.type}
       </p>
       <ul className="mt-3 space-y-2">

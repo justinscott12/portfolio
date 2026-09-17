@@ -7,7 +7,7 @@ interface SkillsSectionProps {
 export default function SkillsSection({ category }: SkillsSectionProps) {
   return (
     <div>
-      <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink/45 dark:text-paper/45">
+      <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink/60 dark:text-paper/60">
         {category.category}
       </h3>
       <div className="mt-3 flex flex-wrap gap-1.5">

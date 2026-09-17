@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -49,12 +50,13 @@ export default function Header() {
             className="group flex items-center gap-2.5"
             aria-label="Justin Scott — home"
           >
-            <span
-              className="grid h-8 w-8 place-items-center rounded-lg bg-accent font-display text-sm font-bold tracking-tight text-[#04231a] transition-transform group-hover:-rotate-3"
-              aria-hidden="true"
-            >
-              JS
-            </span>
+            <Image
+              src="/icon.svg"
+              alt=""
+              width={32}
+              height={32}
+              className="h-8 w-8 rounded-lg transition-transform group-hover:-rotate-3"
+            />
             <span className="font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
               Justin Scott
             </span>

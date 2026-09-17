@@ -36,7 +36,7 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/50 dark:text-paper/50">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/60 dark:text-paper/60">
               Explore
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Connect */}
           <div>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/50 dark:text-paper/50">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/60 dark:text-paper/60">
               Connect
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-line-light pt-8 text-sm text-ink/50 dark:border-line dark:text-paper/50">
+        <div className="mt-12 border-t border-line-light pt-8 text-sm text-ink/60 dark:border-line dark:text-paper/60">
           <p>&copy; {currentYear} Justin Scott. Built with Next.js &amp; Tailwind.</p>
         </div>
       </div>

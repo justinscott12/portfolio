@@ -30,7 +30,7 @@ export default function PrototypeCard({ prototype }: PrototypeCardProps) {
         <h3 className="font-display text-base font-bold tracking-tight text-ink dark:text-paper">
           {prototype.title}
         </h3>
-        <span className="shrink-0 rounded-full border border-line-light px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wider text-ink/45 dark:border-line dark:text-paper/45">
+        <span className="shrink-0 rounded-full border border-line-light px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wider text-ink/60 dark:border-line dark:text-paper/60">
           Prototype
         </span>
       </div>
