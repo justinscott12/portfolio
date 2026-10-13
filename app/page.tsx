@@ -101,6 +101,7 @@ export default function Home() {
                 key={project.id}
                 data-reveal
                 data-reveal-delay={String(Math.min(i + 1, 3))}
+                className="h-full"
               >
                 <ProjectCard project={project} />
               </div>

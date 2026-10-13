@@ -28,8 +28,8 @@ export const projects: Project[] = [
     title: 'US Election Tracker',
     proof: '5,000+ users this year',
     description:
-      'Election-results site with interactive maps, live results, race odds, and 51 state hubs. Overhauled its UI with Claude Code three weeks before election night — 21 small, revertable commits.',
-    techStack: ['Next.js', 'TypeScript', 'Claude Code', 'Interactive SVG', 'REST API', 'Netlify'],
+      'Live election-night results with a poll-closing schedule, prediction-market odds for every major race, and House and Senate control odds. Plus state-by-state electoral maps for all 25 presidential elections since 1928, an 11-layer demographics map, 51 state hubs, and two quizzes.',
+    techStack: ['Next.js', 'TypeScript', 'Interactive SVG maps', 'Prediction-market odds', 'Census & BLS data', 'Netlify'],
     link: 'https://us-election-tracker.com',
     image: '/projects/us-election-tracker.webp',
     imageAlt: 'US Election Tracker — 2024 electoral map with the 270-to-win bar and state-by-state results',

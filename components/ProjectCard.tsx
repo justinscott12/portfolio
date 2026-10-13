@@ -28,7 +28,7 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
   const isLive = Boolean(project.link);
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-line-light bg-paper-2 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-xl hover:shadow-black/5 dark:border-line dark:bg-surface dark:hover:shadow-black/30">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line-light bg-paper-2 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-xl hover:shadow-black/5 dark:border-line dark:bg-surface dark:hover:shadow-black/30">
       {/* Thumbnail */}
       <div className="relative aspect-[16/9] overflow-hidden border-b border-line-light dark:border-line">
         {project.image ? (
