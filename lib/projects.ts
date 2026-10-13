@@ -63,9 +63,9 @@ export const projects: Project[] = [
   {
     id: 'averylightfx',
     title: 'Avery Light FX',
-    proof: 'Runs a real 10,000-LED show',
+    proof: 'Visitor info site for a holiday light show',
     description:
-      'Site for a drive-up Halloween and Christmas light show, with Venmo donations for charity and a secured admin panel that remote-controls the live show — playback, playlists, brightness — via the xSchedule API.',
+      'Info site for a drive-up Halloween and Christmas light show: hours, show status, directions, and Venmo donations for charity. Includes a secured admin panel wired to the show’s xSchedule API.',
     techStack: ['Next.js', 'TypeScript', 'NextAuth.js', 'xSchedule API', 'Tailwind CSS', 'Netlify'],
     link: 'https://averylightfx.com/',
     image: '/projects/averylightfx.webp',
