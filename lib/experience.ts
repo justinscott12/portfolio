@@ -16,8 +16,8 @@ export const experiences: Experience[] = [
     role: 'Software Engineer',
     startDate: 'Jun 2024',
     endDate: 'Present',
-    location: 'Morgantown, WV',
-    type: 'Hybrid',
+    location: 'Tampa, FL',
+    type: 'Remote',
     achievements: [
       'Cut project technical debt ~40% in three months by modernizing legacy Java services and tightening code standards',
       'Ship full-stack features in Angular + Spring Boot + PostgreSQL for enterprise clients in highly regulated industries — emphasis on reliability, security, and audit-ready code paths',
