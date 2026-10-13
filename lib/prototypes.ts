@@ -5,15 +5,30 @@ export interface Prototype {
   techStack: string[];
   link?: string;
   githubLink?: string;
+  /** Label for `link` (default "Visit site"). */
+  linkLabel?: string;
   /** Optional screenshot (16:9 WebP in /public/projects). Most prototypes have no live site. */
   image?: string;
   imageAlt?: string;
   /** Short label shown on the branded cover when there's no screenshot. */
   kicker?: string;
+  /** One-line proof point shown under the title. Keep it verifiable. */
+  proof?: string;
   featured: boolean;
 }
 
 export const prototypes: Prototype[] = [
+  {
+    id: 'world-wide-canvas',
+    title: 'World Wide Canvas',
+    proof: '65 unit tests · open source',
+    description:
+      'Shared, anonymous real-time pixel canvas with a 262,144² cell world. Streams 256×256 chunks like map tiles, bounds memory with LRU eviction that never drops in-flight paints, and rate-limits each visitor by IP with token buckets.',
+    techStack: ['TypeScript', 'Node.js', 'WebSockets', 'SQLite', 'Canvas 2D', 'Vite'],
+    githubLink: 'https://github.com/justinscott12/world-wide-canvas',
+    kicker: 'Real-time systems',
+    featured: true,
+  },
   {
     id: 'otto',
     title: 'Otto — Vehicle Maintenance',
@@ -66,7 +81,6 @@ export const prototypes: Prototype[] = [
     title: 'PDF Toolkit',
     description: 'Free, privacy-focused PDF toolkit web application with 10+ tools including merge, split, compress, rotate, extract pages, watermark, and convert operations. All PDF processing happens client-side in the browser for complete privacy - files never leave the user\'s device. Built with Next.js 16, features SEO optimization, Google AdSense integration, and responsive design.',
     techStack: ['Next.js 16', 'TypeScript', 'React 19', 'pdf-lib', 'pdfjs-dist', 'jspdf', 'Tailwind CSS', 'shadcn/ui'],
-    githubLink: 'https://github.com/justinscott12/pdf-toolkit',
     featured: true,
   },
   {
@@ -90,7 +104,6 @@ export const prototypes: Prototype[] = [
     title: 'MoveFinder - Relocation Assistant',
     description: 'AI-powered relocation assistant. Chat to describe where you want to move (climate, cost, coast, mountains, etc.); the app extracts criteria, ranks US cities from a static dataset, and shows candidates on a map. Pick a city, then describe neighborhood preferences (walkable, safe, family-friendly, transit)—get ranked neighborhoods for that city, displayed on the same map.',
     techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind', 'OpenAI', 'Mapbox GL JS', 'REST API'],
-    githubLink: 'https://github.com/justinscott12/movefinder',
     featured: true,
   },
   {

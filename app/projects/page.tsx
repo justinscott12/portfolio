@@ -8,7 +8,7 @@ import { getAllPrototypes } from '@/lib/prototypes';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'The full portfolio — live B2C products plus AI, RAG, and agentic prototypes and experiments that Justin Scott has designed, built, and shipped.',
+    'The full portfolio — live products and open-source tools with real users, plus AI, RAG, and agentic prototypes Justin Scott has designed, built, and shipped.',
   // OpenGraph/Twitter (incl. og.png + url) inherited from the root layout.
 };
 
@@ -43,9 +43,10 @@ export default function ProjectsPage() {
         />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeader
+            as="h1"
             eyebrow="Projects"
             title="Everything I've built"
-            subtitle="Live B2C products up top, then the prototypes and experiments where I push new stacks, AI patterns, and agentic tooling."
+            subtitle="Live products and published tools up top, then the prototypes and experiments where I push new stacks, AI patterns, and agentic tooling."
           />
         </div>
       </section>
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
       <section className="border-b border-line-light dark:border-line">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/60 dark:text-paper/60">
-            Live &amp; production
+            Live &amp; published
           </h2>
           <div
             data-reveal

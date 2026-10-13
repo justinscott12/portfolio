@@ -1,3 +1,5 @@
+import { proofPoints } from '@/lib/proof';
+
 function PinIcon() {
   return (
     <svg
@@ -33,7 +35,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           <div className="rise flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-accent-strong dark:text-accent-soft">
             <span className="h-px w-6 bg-accent" aria-hidden="true" />
-            Shipped products · MCP server · WVU Computer Science
+            AI-native engineering · Claude Code · Real users
           </div>
 
           <h1 className="rise rise-1 mt-5 font-display text-5xl font-bold tracking-tight text-ink dark:text-paper sm:text-6xl">
@@ -41,21 +43,22 @@ export default function Hero() {
           </h1>
 
           <p className="rise rise-1 mt-2 font-display text-xl font-semibold text-accent-strong dark:text-accent-soft sm:text-2xl">
-            Full-Stack Software Engineer
+            AI-Native Full-Stack Engineer
           </p>
 
           <p className="rise rise-2 mt-5 text-xl leading-8 text-ink/80 dark:text-paper/80 sm:text-2xl sm:leading-9">
-            I design and ship production software end-to-end — live B2C
-            products, an MCP server, and real RAG/agentic systems,{' '}
+            I build and ship real software by directing AI coding agents — and
+            bring the{' '}
             <span className="font-medium text-ink dark:text-paper">
-              built for reliability, not just demos.
-            </span>
+              system design, UX judgment, and verification
+            </span>{' '}
+            that turn generated code into products people actually use.
           </p>
 
           <p className="rise rise-3 mt-5 max-w-2xl text-base leading-7 text-ink/60 dark:text-paper/60">
-            TypeScript · Java/Spring Boot · Python — currently at Idemia-NSS
-            (Angular + Spring Boot), building my own products on the side.
-            AI-native workflow, human-grade standards.
+            Software engineer at Idemia-NSS (Angular, Spring Boot, PostgreSQL)
+            by day. The rest of the time I ship my own products with Claude
+            Code — and build the skills and MCP tooling that make it faster.
           </p>
 
           <p className="rise rise-3 mt-4 flex items-center gap-1.5 text-sm font-medium text-ink/60 dark:text-paper/60">
@@ -72,6 +75,22 @@ export default function Hero() {
             </a>
           </div>
         </div>
+
+        <dl className="rise rise-4 mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line-light bg-line-light dark:border-line dark:bg-line lg:grid-cols-4">
+          {proofPoints.map((point) => (
+            <div
+              key={point.label}
+              className="flex flex-col-reverse justify-end bg-paper-2 px-5 py-5 dark:bg-surface"
+            >
+              <dt className="mt-1 text-sm leading-snug text-ink/60 dark:text-paper/60">
+                {point.label}
+              </dt>
+              <dd className="font-display text-3xl font-bold tracking-tight text-ink dark:text-paper">
+                {point.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </section>
   );

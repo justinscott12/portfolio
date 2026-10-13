@@ -8,8 +8,8 @@ import { prototypes } from './prototypes';
  */
 const HOMEPAGE_FEATURED_IDS = [
   'us-election-tracker',
-  'personal-finance-dashboard',
-  'legaltrace',
+  'minecraft-mods',
+  'averylightfx',
 ];
 
 export function getHomepageFeatured(): Project[] {

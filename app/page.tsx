@@ -11,11 +11,31 @@ import { getAllEducation } from '@/lib/education';
 import { getAllSkills } from '@/lib/skills';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Justin Scott — Full-Stack Engineer' },
+  title: { absolute: 'Justin Scott — AI-Native Full-Stack Engineer' },
   description:
-    'Full-stack engineer shipping production software end-to-end — live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.',
+    'AI-native full-stack engineer: I ship real products by directing AI coding agents like Claude Code, with the system design, UX judgment, and verification to make them production-grade. 7,500+ mod downloads, 1,300+ users, an open-source MCP server.',
   // OpenGraph/Twitter (incl. og.png + url) inherited from the root layout.
 };
+
+/** The four-step method in "How I work". Keep each claim backed by something on this site. */
+const WORK_STEPS = [
+  {
+    title: 'Frame the problem',
+    body: 'Specs with hard boundaries and a definition of done before any code: what is in scope, what must not change, and how we will know it works.',
+  },
+  {
+    title: 'Design the system',
+    body: "The calls an agent shouldn't make alone: data model, failure modes, rate limits, caching, and what happens under real traffic.",
+  },
+  {
+    title: 'Direct the agents',
+    body: "Claude Code with custom skills, MCP servers, and parallel subagents — and when the tooling I need doesn't exist, I build and publish it.",
+  },
+  {
+    title: 'Verify like a skeptic',
+    body: 'Real browsers at phone and desktop widths, both themes, production-like conditions. Small, revertable commits. Done means proven.',
+  },
+];
 
 function ArrowRight() {
   return (
@@ -71,8 +91,8 @@ export default function Home() {
           <div data-reveal>
             <SectionHeader
               eyebrow="Featured work"
-              title="Products I've shipped"
-              subtitle="A live data platform with real users, an MCP server, and an agentic AI tool — designed and built end-to-end."
+              title="Things people actually use"
+              subtitle="Live products with real users — each one designed, built, and shipped end-to-end."
             />
           </div>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -97,47 +117,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
+      {/* How I work (anchor stays #about for the nav) */}
       <section
         id="about"
         className="scroll-mt-16 border-b border-line-light bg-ink/[0.02] dark:border-line dark:bg-paper/[0.02]"
       >
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
           <div data-reveal>
-            <SectionHeader eyebrow="About" title="How I work" />
+            <SectionHeader
+              eyebrow="How I work"
+              title="AI does the typing. I do the engineering."
+              subtitle="Anyone can prompt a model. The leverage is knowing what to ask for, catching what it gets wrong, and getting the result in front of real users. That's the job I do with Claude Code every day."
+            />
           </div>
-          <div
+
+          <ol
             data-reveal
             data-reveal-delay="1"
-            className="mt-8 max-w-3xl space-y-5 text-lg leading-8 text-ink/75 dark:text-paper/75"
+            className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
           >
-            <p>
-              I&apos;m a full-stack engineer at{' '}
+            {WORK_STEPS.map((step, i) => (
+              <li
+                key={step.title}
+                className="rounded-2xl border border-line-light bg-paper-2 p-6 dark:border-line dark:bg-surface"
+              >
+                <span className="font-display text-sm font-bold tabular-nums text-accent-strong dark:text-accent-soft">
+                  0{i + 1}
+                </span>
+                <h3 className="mt-2 font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink/70 dark:text-paper/70">
+                  {step.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+
+          <figure
+            data-reveal
+            data-reveal-delay="2"
+            className="mt-8 rounded-2xl border border-accent/40 bg-accent/[0.06] p-6 sm:p-8"
+          >
+            <figcaption className="text-xs font-semibold uppercase tracking-[0.14em] text-accent-strong dark:text-accent-soft">
+              In practice · US Election Tracker, Oct 2026
+            </figcaption>
+            <p className="mt-3 max-w-4xl text-lg leading-8 text-ink/80 dark:text-paper/80">
+              Three weeks before election night I took the site from audit to
+              production in one session: 80 baseline screenshots across phone,
+              desktop, light, and dark; a server pinned to UTC that exposed a
+              hydration bug hitting every US visitor; a stale election-night
+              header and an independent candidate drawn as a Republican, both
+              caught before launch. It shipped as{' '}
               <strong className="font-semibold text-ink dark:text-paper">
-                Idemia-NSS
-              </strong>
-              , shipping Angular + Spring Boot + PostgreSQL for clients in highly
-              regulated industries — where reliability, security, and audit-ready
-              code aren&apos;t optional.
-            </p>
-            <p>
-              On my own time I design and ship products end-to-end: a{' '}
-              <strong className="font-semibold text-ink dark:text-paper">
-                US Election Tracker
+                21 small, individually revertable commits
               </strong>{' '}
-              with real users,{' '}
-              <strong className="font-semibold text-ink dark:text-paper">
-                DevResumes
-              </strong>{' '}
-              (an AI resume builder with Stripe, GCP Cloud Run + Neon), plus
-              agentic and RAG tools and a{' '}
-              <strong className="font-semibold text-ink dark:text-paper">
-                Model Context Protocol server
-              </strong>
-              . Cursor and Claude let me move from idea to working product fast —
-              tests, review, and shipped reliability stay non-negotiable.
+              with before/after evidence for every change.
             </p>
-          </div>
+          </figure>
         </div>
       </section>
 
@@ -176,7 +213,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="Skills"
               title="What I build with"
-              subtitle="Depth across the stack — languages, frameworks, AI tooling, data, and cloud."
+              subtitle="AI-native workflow on top of a real full-stack foundation — the second is what makes the first trustworthy."
             />
           </div>
           <div

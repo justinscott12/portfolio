@@ -21,14 +21,18 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://justin-scott.dev"),
   title: {
-    default: "Justin Scott — Full-Stack Engineer",
+    default: "Justin Scott — AI-Native Full-Stack Engineer",
     template: "%s | Justin Scott",
   },
   description:
-    "Full-stack engineer shipping production software end-to-end — live B2C products, an MCP server, and real RAG/agentic systems. TypeScript, Java/Spring Boot, Python. Built for reliability, not just demos.",
+    "AI-native full-stack engineer: I ship real products by directing AI coding agents like Claude Code, with the system design, UX judgment, and verification to make them production-grade. 7,500+ mod downloads, 1,300+ users, an open-source MCP server.",
   keywords: [
     "Justin Scott",
     "AI-Native Engineer",
+    "Claude Code",
+    "Agentic Engineering",
+    "Context Engineering",
+    "System Design",
     "Full-Stack Engineer",
     "Cursor",
     "Claude",
@@ -51,23 +55,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://justin-scott.dev",
     siteName: "Justin Scott",
-    title: "Justin Scott — Full-Stack Engineer",
+    title: "Justin Scott — AI-Native Full-Stack Engineer",
     description:
-      "I design and ship production software end-to-end. Live B2C products, an MCP server, and real RAG/agentic systems — built for reliability, not just demos.",
+      "I ship real software by directing AI coding agents — with the system design, UX judgment, and verification that make it production-grade.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Justin Scott — Full-Stack Engineer. Live products, an MCP server, and real RAG/agentic systems.",
+        alt: "Justin Scott — AI-Native Full-Stack Engineer. 7,500+ mod downloads, 1,300+ users, an open-source MCP server.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Justin Scott — Full-Stack Engineer",
+    title: "Justin Scott — AI-Native Full-Stack Engineer",
     description:
-      "I design and ship production software end-to-end — live products, an MCP server, and real RAG/agentic systems.",
+      "I ship real software by directing AI coding agents — with the system design, UX judgment, and verification that make it production-grade.",
     images: ["/og.png"],
   },
   robots: {
@@ -102,7 +106,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Justin Scott",
-              jobTitle: "Full-Stack Software Engineer",
+              jobTitle: "AI-Native Full-Stack Engineer",
               email: "jscottwv@gmail.com",
               url: "https://justin-scott.dev",
               address: {
@@ -114,13 +118,14 @@ export default function RootLayout({
               sameAs: [
                 "https://www.linkedin.com/in/justin-scott12",
                 "https://github.com/justinscott12",
+                "https://www.npmjs.com/~justinscott12",
               ],
               alumniOf: {
                 "@type": "EducationalOrganization",
                 name: "West Virginia University",
               },
               description:
-                "Full-stack engineer shipping live B2C products, RAG/agentic systems, and an MCP server. TypeScript/Next.js, Java/Spring Boot, Python.",
+                "AI-native full-stack engineer who ships real products by directing AI coding agents like Claude Code, backed by system design, UX, and verification. TypeScript/Next.js, Java/Spring Boot, Python.",
             }),
           }}
         />

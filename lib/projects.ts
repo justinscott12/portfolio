@@ -5,46 +5,72 @@ export interface Project {
   techStack: string[];
   link?: string;
   githubLink?: string;
+  /** Label for `link` (default "Visit site"). */
+  linkLabel?: string;
   /** Screenshot in /public/projects (16:9 WebP). Omit for repos with no live site. */
   image?: string;
   imageAlt?: string;
   /** Short label shown on the branded cover when there's no screenshot. */
   kicker?: string;
+  /** One-line proof point (users, downloads, tests…) shown under the title. Keep it verifiable. */
+  proof?: string;
   featured: boolean;
 }
 
+/*
+ * Proof figures as of Oct 12, 2026: election-site users from Google Analytics; mod downloads from
+ * Modrinth (7,571 across all projects; Advancement Tracker 4,426);
+ * MCP server listed on npm (0.1.2) and the official MCP Registry.
+ */
 export const projects: Project[] = [
   {
     id: 'us-election-tracker',
     title: 'US Election Tracker',
+    proof: '1,300+ users',
     description:
-      'Data-heavy election site: an interactive SVG map, live results, demographics, and notable races, backed by an authenticated REST API so editorial updates ship without a redeploy.',
-    techStack: ['Next.js', 'TypeScript', 'Interactive SVG', 'REST API', 'Python', 'SEO'],
+      'Election-results site with interactive maps, live results, race odds, and 51 state hubs. Overhauled its UI with Claude Code three weeks before election night — 21 small, revertable commits.',
+    techStack: ['Next.js', 'TypeScript', 'Claude Code', 'Interactive SVG', 'REST API', 'Netlify'],
     link: 'https://us-election-tracker.com',
     image: '/projects/us-election-tracker.webp',
-    imageAlt: 'US Election Tracker — interactive US map and live election results dashboard',
+    imageAlt: 'US Election Tracker — 2024 electoral map with the 270-to-win bar and state-by-state results',
     featured: true,
   },
   {
-    id: 'devresumes',
-    title: 'DevResumes',
+    id: 'minecraft-mods',
+    title: 'Minecraft Fabric Mods',
+    proof: '7,500+ downloads',
     description:
-      'AI resume builder for developers — GitHub OAuth pulls your repos, OpenAI structures your experience, and live ATS scoring tailors output to a target job. Spring Boot + Stripe on GCP Cloud Run + Neon. (Backend rebuild in progress.)',
-    techStack: ['Next.js', 'Spring Boot', 'GCP Cloud Run', 'Neon Postgres', 'OpenAI', 'Stripe'],
-    image: '/projects/devresumes.webp',
-    imageAlt: 'DevResumes — an AI-powered resume builder for developers, shown at desktop width',
+      'Quality-of-life Fabric mods, kept current with each Minecraft release through a Claude Code pipeline I built: a custom skill, an MCP decompiler to diff versions, and my own publishing MCP server.',
+    techStack: ['Java', 'Fabric', 'Mixins', 'Gradle', 'Claude Code', 'MCP'],
+    link: 'https://modrinth.com/mod/advancement-tracker',
+    linkLabel: 'View on Modrinth',
+    kicker: 'Fabric · Modrinth',
+    featured: true,
+  },
+  {
+    id: 'modrinth-mcp',
+    title: 'Modrinth MCP Server',
+    proof: 'Open source · npm + MCP Registry',
+    description:
+      'MCP server that lets Claude and other AI assistants search Modrinth and publish mod releases. Listed in the official MCP Registry and installable as a Claude Code plugin — I ship my own mod updates with it.',
+    techStack: ['MCP', 'TypeScript', 'Node.js', 'Claude Code plugin', 'npm'],
+    link: 'https://www.npmjs.com/package/@justinscott12/modrinth-mcp',
+    linkLabel: 'View on npm',
+    githubLink: 'https://github.com/justinscott12/modrinth-mcp',
+    kicker: 'Model Context Protocol',
     featured: false,
   },
   {
     id: 'averylightfx',
     title: 'Avery Light FX',
+    proof: 'Runs a real 10,000-LED show',
     description:
-      'Live site for a community holiday light show — visit info, Venmo donations, and schedule — with an authenticated admin panel that drives the live xSchedule lighting rig.',
-    techStack: ['Next.js', 'TypeScript', 'NextAuth.js', 'React', 'Tailwind CSS', 'axios'],
+      'Site for a drive-up Halloween and Christmas light show, with Venmo donations for charity and a secured admin panel that remote-controls the live show — playback, playlists, brightness — via the xSchedule API.',
+    techStack: ['Next.js', 'TypeScript', 'NextAuth.js', 'xSchedule API', 'Tailwind CSS', 'Netlify'],
     link: 'https://averylightfx.com/',
     image: '/projects/averylightfx.webp',
-    imageAlt: 'Avery Light FX — community holiday light show site with schedule and donations',
-    featured: false,
+    imageAlt: 'Avery Light FX — Halloween light show site with show hours and the FM station for music',
+    featured: true,
   },
   {
     id: 'dungeonhelper',
@@ -52,7 +78,6 @@ export const projects: Project[] = [
     description:
       'RAG assistant for Destiny 2 dungeon mechanics — OpenAI embeddings + Pinecone retrieval with streaming Claude answers, plus Zod validation, rate limiting, and response caching.',
     techStack: ['RAG', 'OpenAI', 'Pinecone', 'Claude', 'Next.js', 'TypeScript'],
-    githubLink: 'https://github.com/justinscott12/dungeonhelper',
     kicker: 'RAG assistant',
     featured: false,
   },

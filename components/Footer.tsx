@@ -3,7 +3,7 @@ import Link from 'next/link';
 const navLinks = [
   { href: '/#work', label: 'Work' },
   { href: '/projects', label: 'Projects' },
-  { href: '/#about', label: 'About' },
+  { href: '/#about', label: 'How I work' },
   { href: '/#experience', label: 'Experience' },
   { href: '/#contact', label: 'Contact' },
 ];
@@ -29,8 +29,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-6 text-ink/60 dark:text-paper/60">
-              Full-stack engineer shipping live B2C products, RAG/agentic
-              systems, and an MCP server. Tampa, FL.
+              AI-native full-stack engineer — I direct Claude Code to ship real
+              products, with the system design and verification to back them.
+              Tampa, FL.
             </p>
           </div>
 

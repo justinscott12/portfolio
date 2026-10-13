@@ -3,14 +3,40 @@ export interface SkillCategory {
   skills: string[];
 }
 
-/** Grouped for a fast recruiter scan — strongest/most in-demand first, no orphan groups. */
+/**
+ * Grouped for a fast recruiter scan — the AI-native workflow first, then the engineering
+ * foundation that makes it trustworthy. Only list what's backed by work on this site.
+ */
 export const skills: SkillCategory[] = [
   {
-    category: 'Languages',
-    skills: ['TypeScript', 'Python', 'Java', 'JavaScript', 'SQL', 'Bash'],
+    category: 'AI-native engineering',
+    skills: [
+      'Claude Code (skills, subagents, hooks)',
+      'MCP server development',
+      'Prompt & context engineering',
+      'Agentic workflows (LangGraph)',
+      'RAG',
+      'Anthropic & OpenAI APIs',
+      'Cursor',
+    ],
   },
   {
-    category: 'Frameworks & APIs',
+    category: 'Product & system design',
+    skills: [
+      'System design',
+      'Real-time systems (WebSockets)',
+      'API design',
+      'UX & accessibility (WCAG)',
+      'Performance & Core Web Vitals',
+      'Technical SEO',
+    ],
+  },
+  {
+    category: 'Languages',
+    skills: ['TypeScript', 'Java', 'Python', 'JavaScript', 'SQL', 'Bash'],
+  },
+  {
+    category: 'Frameworks',
     skills: [
       'Next.js',
       'React',
@@ -18,44 +44,18 @@ export const skills: SkillCategory[] = [
       'Angular',
       'Node.js',
       'FastAPI',
-      'React Native',
-      'Expo',
-      'REST APIs',
-      'Microservices',
+      'React Native / Expo',
       'Tailwind CSS',
-      'Stripe',
-    ],
-  },
-  {
-    category: 'AI & LLM',
-    skills: [
-      'OpenAI API',
-      'Anthropic Claude API',
-      'RAG',
-      'LangGraph',
-      'LangChain',
-      'Pinecone',
-      'MCP',
+      'Fabric (Minecraft)',
     ],
   },
   {
     category: 'Data',
-    skills: ['PostgreSQL', 'Neon (serverless Postgres)', 'pgvector', 'Redis'],
+    skills: ['PostgreSQL', 'SQLite', 'pgvector', 'Redis', 'Pinecone'],
   },
   {
     category: 'Cloud & DevOps',
-    skills: [
-      'AWS',
-      'GCP',
-      'GCP Cloud Run',
-      'Docker',
-      'Terraform',
-      'GitHub Actions',
-      'GitLab CI',
-      'Jenkins',
-      'Linux',
-      'Git',
-    ],
+    skills: ['AWS', 'GCP', 'Netlify', 'Docker', 'Terraform', 'GitHub Actions', 'Jenkins', 'GitLab CI', 'Linux'],
   },
 ];
 

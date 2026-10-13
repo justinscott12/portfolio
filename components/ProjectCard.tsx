@@ -75,7 +75,12 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
         <h3 className="font-display text-lg font-bold tracking-tight text-ink dark:text-paper">
           {project.title}
         </h3>
-        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-ink/70 dark:text-paper/70">
+        {project.proof && (
+          <p className="mt-1 text-sm font-semibold text-accent-strong dark:text-accent-soft">
+            {project.proof}
+          </p>
+        )}
+        <p className="mt-2 text-sm leading-relaxed text-ink/70 dark:text-paper/70">
           {project.description}
         </p>
 
@@ -96,7 +101,7 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
                 rel="noopener noreferrer"
                 className="link-accent inline-flex items-center gap-1 text-sm"
               >
-                Visit site <ArrowUpRight />
+                {project.linkLabel ?? 'Visit site'} <ArrowUpRight />
               </a>
             )}
             {project.githubLink && (
