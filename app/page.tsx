@@ -13,7 +13,7 @@ import { getAllSkills } from '@/lib/skills';
 export const metadata: Metadata = {
   title: { absolute: 'Justin Scott — AI-Native Full-Stack Engineer' },
   description:
-    'AI-native full-stack engineer: I ship real products by directing AI coding agents like Claude Code, with the system design, UX judgment, and verification to make them production-grade. 7,500+ mod downloads, 1,300+ users, an open-source MCP server.',
+    'AI-native full-stack engineer: I ship real products by directing AI coding agents like Claude Code, with the system design, UX judgment, and verification to make them production-grade. 7,500+ mod downloads, 5,000+ users, an open-source MCP server.',
   // OpenGraph/Twitter (incl. og.png + url) inherited from the root layout.
 };
 

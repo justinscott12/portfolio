@@ -18,7 +18,7 @@ export interface Project {
 }
 
 /*
- * Proof figures as of Oct 12, 2026: election-site users from Google Analytics; mod downloads from
+ * Proof figures as of Oct 12, 2026: election-site users from Google Analytics (5.1K active users, Jan 1–Oct 12); mod downloads from
  * Modrinth (7,571 across all projects; Advancement Tracker 4,426);
  * MCP server listed on npm (0.1.2) and the official MCP Registry.
  */
@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     id: 'us-election-tracker',
     title: 'US Election Tracker',
-    proof: '1,300+ users',
+    proof: '5,000+ users this year',
     description:
       'Election-results site with interactive maps, live results, race odds, and 51 state hubs. Overhauled its UI with Claude Code three weeks before election night — 21 small, revertable commits.',
     techStack: ['Next.js', 'TypeScript', 'Claude Code', 'Interactive SVG', 'REST API', 'Netlify'],

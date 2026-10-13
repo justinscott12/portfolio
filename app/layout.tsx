@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Justin Scott",
   },
   description:
-    "AI-native full-stack engineer: I ship real products by directing AI coding agents like Claude Code, with the system design, UX judgment, and verification to make them production-grade. 7,500+ mod downloads, 1,300+ users, an open-source MCP server.",
+    "AI-native full-stack engineer: I ship real products by directing AI coding agents like Claude Code, with the system design, UX judgment, and verification to make them production-grade. 7,500+ mod downloads, 5,000+ users, an open-source MCP server.",
   keywords: [
     "Justin Scott",
     "AI-Native Engineer",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Justin Scott — AI-Native Full-Stack Engineer. 7,500+ mod downloads, 1,300+ users, an open-source MCP server.",
+        alt: "Justin Scott — AI-Native Full-Stack Engineer. 7,500+ mod downloads, 5,000+ users, an open-source MCP server.",
       },
     ],
   },
