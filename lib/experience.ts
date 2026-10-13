@@ -19,10 +19,10 @@ export const experiences: Experience[] = [
     location: 'Tampa, FL',
     type: 'Remote',
     achievements: [
-      'Cut project technical debt ~40% in three months by modernizing legacy Java services and tightening code standards',
-      'Ship full-stack features in Angular + Spring Boot + PostgreSQL for enterprise clients in highly regulated industries — emphasis on reliability, security, and audit-ready code paths',
-      'Improved application performance ~30% via Spring Boot microservice design, PostgreSQL query tuning, and reactive Angular frontend',
-      'Use AI tooling (Cursor, Claude) for spikes, refactors, and exploratory work; production changes go through standard team review, testing, and release',
+      'Ship full-stack features in Angular, Spring Boot, and PostgreSQL for enterprise clients in highly regulated industries, where reliability, security, and auditability are non-negotiable',
+      'Cut technical debt ~40% in three months by modernizing legacy Java services and tightening code standards',
+      'Improved application performance ~30% through Spring Boot microservice design, PostgreSQL query tuning, and a reactive Angular frontend',
+      'Use AI tools (Cursor, Claude) to move faster on spikes, refactors, and exploration, with every production change still going through team review, testing, and release',
     ],
   },
   {
@@ -34,8 +34,7 @@ export const experiences: Experience[] = [
     location: 'Morgantown, WV',
     type: 'Onsite',
     achievements: [
-      'Refactored Jenkins CI/CD pipeline architecture into modular reusable components — 70% reduction in build, test, and deploy times',
-      'Restructured build infrastructure into reusable Jenkins components, reducing maintenance overhead and speeding onboarding for new engineers',
+      'Rebuilt the Jenkins CI/CD pipeline as modular, reusable components, cutting build, test, and deploy times 70% and making pipelines easier to maintain and onboard onto',
       'Modernized multi-platform mobile apps to current Android and iOS SDKs',
     ],
   },
@@ -48,9 +47,9 @@ export const experiences: Experience[] = [
     location: 'Washington, PA',
     type: 'Hybrid',
     achievements: [
-      'Implemented Terraform Infrastructure-as-Code for AWS resources, reducing new environment setup time by 50%',
-      'Automated continuous delivery via GitLab CI/CD pipelines across staging and production environments',
-      'Built a centralized MkDocs/Markdown engineering knowledge base documenting code patterns and runbooks for new contributors',
+      'Wrote Terraform infrastructure-as-code for AWS, halving the time to stand up a new environment',
+      'Automated continuous delivery to staging and production with GitLab CI/CD pipelines',
+      'Built an MkDocs engineering knowledge base of code patterns and runbooks for new contributors',
     ],
   },
 ];
