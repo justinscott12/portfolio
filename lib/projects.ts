@@ -24,6 +24,20 @@ export interface Project {
  */
 export const projects: Project[] = [
   {
+    id: 'storm-replay',
+    title: 'Storm Replay',
+    proof: 'Finds the Moore EF5 within 2 km of its surveyed touchdown',
+    description:
+      'Replays real NEXRAD Doppler radar of five famous tornadoes in the browser, with no backend. My own Archive II and bzip2 decoder runs in Web Workers, WebGL draws the radar, and an in-browser detector marks rotation over NWS warnings and damage paths.',
+    techStack: ['TypeScript', 'WebGL', 'Web Workers', 'MapLibre GL', 'Binary format decoding', 'GitHub Pages'],
+    link: 'https://justinscott12.github.io/storm-replay/',
+    linkLabel: 'Open the replay',
+    githubLink: 'https://github.com/justinscott12/storm-replay',
+    image: '/projects/storm-replay.webp',
+    imageAlt: 'Storm Replay — Moore, Oklahoma radar velocity with the auto-detected rotation riding the damage path',
+    featured: true,
+  },
+  {
     id: 'us-election-tracker',
     title: 'US Election Tracker',
     proof: '5,000+ users this year',
