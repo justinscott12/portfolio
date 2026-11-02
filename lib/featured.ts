@@ -7,6 +7,7 @@ import { prototypes } from './prototypes';
  * (Project and Prototype are structurally identical, so both render via ProjectCard.)
  */
 const HOMEPAGE_FEATURED_IDS = [
+  'leasetrace',
   'us-election-tracker',
   'minecraft-mods',
   'averylightfx',

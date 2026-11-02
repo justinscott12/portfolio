@@ -24,6 +24,7 @@ export interface Project {
  * Modrinth (7,571 across all projects; Advancement Tracker 4,426);
  * MCP server listed on npm (0.1.2) and the official MCP Registry.
  * LeaseTrace figures from its evals page (Nov 2, 2026): held-out leases, Opus 5.5 medium, 39 runs.
+ * Avery Light FX from Google Analytics (Nov 2, 2026): 1.7K active users in calendar 2025, traffic concentrated Oct–Dec.
  */
 export const projects: Project[] = [
   {
@@ -95,7 +96,7 @@ export const projects: Project[] = [
   {
     id: 'averylightfx',
     title: 'Avery Light FX',
-    proof: 'Visitor info site for a holiday light show',
+    proof: '1,700+ visitors last season, mostly in the weeks before Christmas',
     description:
       'Info site for a drive-up Halloween and Christmas light show: hours, show status, directions, and Venmo donations for charity. Includes a secured admin panel wired to the show’s xSchedule API.',
     techStack: ['Next.js', 'TypeScript', 'NextAuth.js', 'xSchedule API', 'Tailwind CSS', 'Netlify'],

@@ -91,11 +91,11 @@ export default function Home() {
           <div data-reveal>
             <SectionHeader
               eyebrow="Featured work"
-              title="Things people actually use"
-              subtitle="Live products with real users — each one designed, built, and shipped end-to-end."
+              title="What I've shipped"
+              subtitle="Live products with real users and an AI system with measured accuracy, each one designed, built, and shipped end to end."
             />
           </div>
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
             {featured.map((project, i) => (
               <div
                 key={project.id}
