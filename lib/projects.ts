@@ -21,7 +21,7 @@ export interface Project {
 
 /*
  * Proof figures as of Oct 12, 2026: election-site users from Google Analytics (5.1K active users, Jan 1–Oct 12); mod downloads from
- * Modrinth (7,571 across all projects; Advancement Tracker 4,426);
+ * Modrinth (Nov 2, 2026: 10,360 across all projects; Advancement Tracker 5,824);
  * MCP server listed on npm (0.1.2) and the official MCP Registry.
  * LeaseTrace figures from its evals page (Nov 2, 2026): held-out leases, Opus 5.5 medium, 39 runs.
  * Avery Light FX from Google Analytics (Nov 2, 2026): 1.7K active users in calendar 2025, traffic concentrated Oct–Dec.
@@ -71,7 +71,7 @@ export const projects: Project[] = [
   {
     id: 'minecraft-mods',
     title: 'Minecraft Fabric Mods',
-    proof: '7,500+ downloads',
+    proof: '10,000+ downloads',
     description:
       'Quality-of-life Fabric mods, kept current with each Minecraft release through a Claude Code pipeline I built: a custom skill, an MCP decompiler to diff versions, and my own publishing MCP server.',
     techStack: ['Java', 'Fabric', 'Mixins', 'Gradle', 'Claude Code', 'MCP'],
