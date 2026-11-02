@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import { Project } from '@/lib/projects';
 
@@ -92,7 +93,7 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
           ))}
         </div>
 
-        {(project.link || project.githubLink) && (
+        {(project.link || project.githubLink || project.caseStudy) && (
           <div className="mt-auto flex items-center gap-4 border-t border-line-light pt-4 dark:border-line">
             {project.link && (
               <a
@@ -103,6 +104,14 @@ export default function ProjectCard({ project, priority = false }: ProjectCardPr
               >
                 {project.linkLabel ?? 'Visit site'} <ArrowUpRight />
               </a>
+            )}
+            {project.caseStudy && (
+              <Link
+                href={project.caseStudy}
+                className="inline-flex items-center gap-1 text-sm font-medium text-ink/70 transition-colors hover:text-ink dark:text-paper/70 dark:hover:text-paper"
+              >
+                Case study
+              </Link>
             )}
             {project.githubLink && (
               <a

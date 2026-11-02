@@ -84,15 +84,6 @@ export const prototypes: Prototype[] = [
     featured: true,
   },
   {
-    id: 'legaltrace',
-    title: 'LegalTrace - Lease Compliance',
-    description: 'AI-powered commercial lease compliance checker for Florida property managers and landlords. Uses agentic AI with LangGraph to analyze lease agreements against Florida Chapter 83 statutes, identifying compliance issues and providing actionable recommendations. Features self-correcting workflows, human-in-the-loop interrupts, state-aware retrieval planning, and real-time reasoning trace. Built with FastAPI, Next.js 15, PostgreSQL with pgvector, and MCP protocol.',
-    techStack: ['LangGraph', 'FastAPI', 'Next.js 15', 'pgvector', 'MCP', 'TypeScript'],
-    githubLink: 'https://github.com/justinscott12/legaltrace',
-    kicker: 'Agentic AI',
-    featured: true,
-  },
-  {
     id: 'walrus',
     title: 'Walrus - Crypto Whale Tracker',
     description: 'Full-stack blockchain wallet tracking and analytics platform. Tracks wallet addresses across multiple chains (BTC, ETH, SOL, BSC, Polygon), monitors transactions, and sends multi-channel alerts (Telegram, Discord, Email, SMS, Push). Features ML insights, API access, and Stripe payment integration.',

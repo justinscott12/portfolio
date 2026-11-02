@@ -7,6 +7,8 @@ export interface Project {
   githubLink?: string;
   /** Label for `link` (default "Visit site"). */
   linkLabel?: string;
+  /** Internal case-study page, e.g. "/projects/us-election-tracker". */
+  caseStudy?: string;
   /** Screenshot in /public/projects (16:9 WebP). Omit for repos with no live site. */
   image?: string;
   imageAlt?: string;
@@ -21,8 +23,24 @@ export interface Project {
  * Proof figures as of Oct 12, 2026: election-site users from Google Analytics (5.1K active users, Jan 1–Oct 12); mod downloads from
  * Modrinth (7,571 across all projects; Advancement Tracker 4,426);
  * MCP server listed on npm (0.1.2) and the official MCP Registry.
+ * LeaseTrace figures from its evals page (Nov 2, 2026): held-out leases, Opus 5.5 medium, 39 runs.
  */
 export const projects: Project[] = [
+  {
+    id: 'leasetrace',
+    title: 'LeaseTrace',
+    proof: '97% precision and recall on held-out leases, 0 fabricated citations',
+    description:
+      'Checks a Florida residential lease against the landlord-tenant statute, clause by clause. Claude extracts facts with a quote for each; rules I wrote from the statute decide what is illegal, so every finding links to the lease text and the exact subsection. Measured on 30 labeled leases, with recorded audits that replay for free.',
+    techStack: ['Claude API', 'Structured outputs', 'TypeScript', 'Evals', 'React', 'GitHub Pages'],
+    link: 'https://justinscott12.github.io/leasetrace/',
+    linkLabel: 'Watch an audit',
+    githubLink: 'https://github.com/justinscott12/leasetrace',
+    caseStudy: '/projects/leasetrace',
+    image: '/projects/leasetrace.webp',
+    imageAlt: 'LeaseTrace: a lease excerpt marked with highlighter colors for a violation and two void terms, with the statute behind each',
+    featured: true,
+  },
   {
     id: 'storm-replay',
     title: 'Storm Replay',
