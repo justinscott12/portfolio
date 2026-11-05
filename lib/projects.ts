@@ -66,7 +66,7 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'TypeScript', 'Interactive SVG maps', 'Prediction-market odds', 'Census & BLS data', 'Netlify'],
     link: 'https://us-election-tracker.com',
     image: '/projects/us-election-tracker.webp',
-    imageAlt: 'US Election Tracker — 2024 electoral map with the 270-to-win bar and state-by-state results',
+    imageAlt: 'US Election Tracker live results the day after the 2026 midterms: Senate seats won, control odds, poll closings and called races',
     featured: true,
   },
   {
