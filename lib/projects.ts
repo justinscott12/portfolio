@@ -20,7 +20,8 @@ export interface Project {
 }
 
 /*
- * Proof figures as of Oct 12, 2026: election-site users from Google Analytics (5.1K active users, Jan 1–Oct 12); mod downloads from
+ * Election-site users from Google Analytics: 3.8K active users Nov 1–5, 2026 (midterm week), 5.1K Jan 1–Oct 12.
+ * Other proof figures: mod downloads from
  * Modrinth (Nov 2, 2026: 10,360 across all projects; Advancement Tracker 5,824);
  * MCP server listed on npm (0.1.2) and the official MCP Registry.
  * LeaseTrace figures from its evals page (Nov 2, 2026): held-out leases, Opus 5.5 medium, 39 runs.
@@ -59,9 +60,9 @@ export const projects: Project[] = [
   {
     id: 'us-election-tracker',
     title: 'US Election Tracker',
-    proof: '5,000+ users this year',
+    proof: '3,800 users in midterm week, 1m 46s average engagement',
     description:
-      'Live election-night results with a poll-closing schedule, prediction-market odds for every major race, and House and Senate control odds. Plus state-by-state electoral maps for all 25 presidential elections since 1928, an 11-layer demographics map, 51 state hubs, and two quizzes.',
+      'Ran live results for the 2026 midterms: 16 Senate, 15 governor and 21 House races refreshed about every 20 seconds from the NPR feed, behind a CDN cache that kept server load flat through the election-night spike. Races are called from the feed, from prediction markets at 99.5%, or by hand. Plus electoral maps for every presidential election since 1928, a demographics map, 51 state hubs, and two quizzes.',
     techStack: ['Next.js', 'TypeScript', 'Interactive SVG maps', 'Prediction-market odds', 'Census & BLS data', 'Netlify'],
     link: 'https://us-election-tracker.com',
     image: '/projects/us-election-tracker.webp',
