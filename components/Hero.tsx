@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           <div className="rise flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-accent-strong dark:text-accent-soft">
             <span className="h-px w-6 bg-accent" aria-hidden="true" />
-            AI-native engineering · Claude Code · Real users
+            AI-native engineering · Claude Code · Shipped products
           </div>
 
           <h1 className="rise rise-1 mt-5 font-display text-5xl font-bold tracking-tight text-ink dark:text-paper sm:text-6xl">
@@ -47,12 +47,12 @@ export default function Hero() {
           </p>
 
           <p className="rise rise-2 mt-5 text-xl leading-8 text-ink/80 dark:text-paper/80 sm:text-2xl sm:leading-9">
-            I build and ship real software by directing AI coding agents — and
+            I build and ship software by directing AI coding agents — and
             bring the{' '}
             <span className="font-medium text-ink dark:text-paper">
               system design, UX judgment, and verification
             </span>{' '}
-            that turn generated code into products people actually use.
+            that turn generated code into products people use.
           </p>
 
           <p className="rise rise-3 mt-5 max-w-2xl text-base leading-7 text-ink/60 dark:text-paper/60">

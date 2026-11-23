@@ -92,7 +92,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="Featured work"
               title="What I've shipped"
-              subtitle="Live products with real users and an AI system with measured accuracy, each one designed, built, and shipped end to end."
+              subtitle="Live products and an AI system with measured accuracy, each designed, built, and shipped end to end."
             />
           </div>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -128,7 +128,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="How I work"
               title="AI does the typing. I do the engineering."
-              subtitle="Anyone can prompt a model. The leverage is knowing what to ask for, catching what it gets wrong, and getting the result in front of real users. That's the job I do with Claude Code every day."
+              subtitle="Anyone can prompt a model. The leverage is knowing what to ask for, catching what it gets wrong, and shipping the result. That's my job with Claude Code every day."
             />
           </div>
 
@@ -214,7 +214,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="Skills"
               title="What I build with"
-              subtitle="AI-native workflow on top of a real full-stack foundation — the second is what makes the first trustworthy."
+              subtitle="An AI-native workflow on a full-stack foundation — the second is what makes the first trustworthy."
             />
           </div>
           <div

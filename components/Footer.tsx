@@ -29,7 +29,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-6 text-ink/60 dark:text-paper/60">
-              AI-native full-stack engineer — I direct Claude Code to ship real
+              AI-native full-stack engineer — I direct Claude Code to ship
               products, with the system design and verification to back them.
               Tampa, FL.
             </p>
