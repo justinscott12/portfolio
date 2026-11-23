@@ -20,7 +20,8 @@ export const experiences: Experience[] = [
     type: 'Remote',
     achievements: [
       'Ship full-stack features in Angular, Spring Boot, and PostgreSQL for enterprise clients in highly regulated industries, where reliability, security, and auditability are non-negotiable',
-      'Cut technical debt ~40% in three months by modernizing legacy Java services and tightening code standards',
+      // TODO(justin): confirm timeframe and measurement source (e.g. Jira ticket count)
+      'Modernized legacy Java services and tightened code standards, driving an ~80% drop in open debug tickets and measured tech debt',
       'Improved application performance ~30% through Spring Boot microservice design, PostgreSQL query tuning, and a reactive Angular frontend',
       'Use AI tools (Cursor, Claude) to move faster on spikes, refactors, and exploration, with every production change still going through team review, testing, and release',
     ],
