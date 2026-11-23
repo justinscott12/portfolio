@@ -31,9 +31,10 @@ export const projects: Project[] = [
   {
     id: 'leasetrace',
     title: 'LeaseTrace',
-    proof: '97% precision and recall on held-out leases, 0 fabricated citations',
+    // TODO(justin): held-out lease count? 39 runs at 3 per lease suggests 13 held-out (30 is the full labeled set). Add the number here once confirmed.
+    proof: '97% precision and recall on held-out leases · 0 fabricated citations',
     description:
-      'Checks a Florida residential lease against the landlord-tenant statute, clause by clause. Claude extracts facts with a quote for each; rules I wrote from the statute decide what is illegal, so every finding links to the lease text and the exact subsection. Measured on 30 labeled leases, with recorded audits that replay for free.',
+      'Claude extracts facts from a Florida lease, each with a quote; deterministic rules I wrote from the statute decide what is illegal. Every finding links to the lease text and the exact subsection. Scored on 30 labeled leases; recorded audits replay for free.',
     techStack: ['Claude API', 'Structured outputs', 'TypeScript', 'Evals', 'React', 'GitHub Pages'],
     link: 'https://justinscott12.github.io/leasetrace/',
     linkLabel: 'Watch an audit',

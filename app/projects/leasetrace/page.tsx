@@ -59,7 +59,7 @@ export default function LeaseTraceCaseStudyPage() {
           as="h1"
           eyebrow="Case study"
           title="An AI lease checker you can measure"
-          subtitle="LeaseTrace checks a Florida residential lease against the landlord-tenant statute and marks every clause that conflicts with it. The first version read well and was wrong. The second is built around a number: how often it's right on leases it has never seen."
+          subtitle="LeaseTrace checks a Florida residential lease against the landlord-tenant statute. Claude extracts facts with a quote for each; deterministic rules decide what's illegal. On leases it was never tuned on, it scores 97% precision and recall with 0 fabricated citations."
         />
       </div>
 
