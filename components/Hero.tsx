@@ -56,8 +56,10 @@ export default function Hero() {
           </p>
 
           <p className="rise rise-3 mt-5 max-w-2xl text-base leading-7 text-ink/60 dark:text-paper/60">
-            Software engineer at Idemia-NSS (Angular, Spring Boot, PostgreSQL)
-            by day. The rest of the time I ship my own products with Claude
+            Software engineer at Idemia-NSS (Angular, Spring Boot, PostgreSQL),
+            where I rebuilt the Jenkins CI/CD pipeline to cut build-to-deploy
+            time 70% and tuned services and queries for a ~30% performance
+            gain. The rest of the time I ship my own products with Claude
             Code — and build the skills and MCP tooling that make it faster.
           </p>
 
