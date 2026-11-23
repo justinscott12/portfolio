@@ -197,7 +197,7 @@ export default function Home() {
               <ExperienceCard
                 key={experience.id}
                 experience={experience}
-                limit={4}
+                limit={5}
               />
             ))}
           </ol>
