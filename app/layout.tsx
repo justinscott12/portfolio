@@ -45,7 +45,8 @@ export const metadata: Metadata = {
     "FastAPI",
     "React Native",
     "Expo",
-    "Tampa",
+    "St. Petersburg",
+    "Tampa Bay",
     "Portfolio",
   ],
   authors: [{ name: "Justin Scott" }],
@@ -111,7 +112,7 @@ export default function RootLayout({
               url: "https://justin-scott.dev",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Tampa",
+                addressLocality: "St. Petersburg",
                 addressRegion: "FL",
                 addressCountry: "US",
               },

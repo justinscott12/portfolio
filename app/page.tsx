@@ -271,7 +271,7 @@ export default function Home() {
               </h2>
               <p className="mt-4 text-lg leading-8 text-ink/70 dark:text-paper/70">
                 Open to remote engineering roles at early-stage startups, seed
-                to Series&nbsp;A. Based in Tampa, FL, and always happy to talk
+                to Series&nbsp;A. Based in St. Petersburg, FL, and always happy to talk
                 shop.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
