@@ -270,8 +270,9 @@ export default function Home() {
                 {"Let's talk"}
               </h2>
               <p className="mt-4 text-lg leading-8 text-ink/70 dark:text-paper/70">
-                Always up for talking shop or the right opportunity. Based in
-                Tampa, FL — open to remote and mostly-remote hybrid.
+                Open to remote engineering roles at early-stage startups, seed
+                to Series&nbsp;A. Based in Tampa, FL, and always happy to talk
+                shop.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                 <a href="mailto:jscottwv@gmail.com" className="btn btn-primary">

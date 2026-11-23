@@ -65,7 +65,7 @@ export default function Hero() {
 
           <p className="rise rise-3 mt-4 flex items-center gap-1.5 text-sm font-medium text-ink/60 dark:text-paper/60">
             <PinIcon />
-            Tampa, FL · Remote-friendly
+            Tampa, FL · Open to remote roles at early-stage startups
           </p>
 
           <div className="rise rise-4 mt-8 flex flex-wrap items-center gap-3">
